@@ -41,6 +41,17 @@
    font-weight: 900;
    font-style: normal;
 }
-/* font-family: 'Roboto', sans-serif; (400, 500, 700, 900) */
+/* 
+font-family: 'Roboto', sans-serif; (400, 500, 700, 900);
+font-family: 'Larsseit'; (400, 500, 700);
+font-family: 'Lato'; (400, 700, 900)
+ */
 
 /* ============================================================= */
+
+.text-block {
+   font-size: 24px;
+}
+.text-block p:not(:last-child) {
+   padding-bottom: 20px;
+}
