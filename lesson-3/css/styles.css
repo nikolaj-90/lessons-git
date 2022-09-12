@@ -1,0 +1,69 @@
+body {
+   font-family: sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   color: rgb(51, 51, 51);
+}
+img {
+   width: 500px;
+}
+.solar-system-image img {
+   width: 100%;
+}
+.menu li,
+.menu-item a {
+   color: rgb(255, 0, 0);
+}
+span {
+   color: rgb(0, 128, 0);
+}
+p span {
+   background-color: rgb(255, 255, 0);
+}
+div ~ a {
+   color: rgb(255, 0, 0);
+}
+p a {
+   color: rgb(255, 0, 0);
+}
+div + h3 {
+   color: rgb(255, 0, 0);
+}
+#solar-system p > span {
+   color: rgb(0, 0, 0);
+}
+.header {
+}
+.menu-item {
+}
+.menu-link {
+}
+.content {
+}
+.block {
+}
+.block ul > li {
+   color: rgb(0, 0, 255);
+}
+.block ul > li a {
+   color: rgb(255, 0, 0);
+}
+.solar-system-image {
+}
+.text-block ~ p {
+   color: #555;
+}
+.solar-system {
+}
+.description-list + li, 
+.description-list a{
+   color: rgb(51, 51, 51);
+}
+.footer span {
+   color: rgb(255, 0, 0);
+}
