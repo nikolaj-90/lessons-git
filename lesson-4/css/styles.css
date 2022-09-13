@@ -130,6 +130,10 @@ div {
    color: violet;
 }
 
+img {
+   width: 600px;
+   float: right;
+}
 /* ======================= Main sectiont ======================= */
 .grey p {
    color: #444;
