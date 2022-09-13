@@ -1,42 +1,42 @@
 /* =================== Fonts ================================ */
 @font-face {
-   font-family: 'Larsseit';
+   font-family: "Larsseit";
    src: url("../fonts/Larsseit.woff2") format("woff2"), url("../fonts/Larsseit.woff") format("woff");
    font-display: swap;
    font-weight: 400;
    font-style: normal;
 }
 @font-face {
-   font-family: 'Larsseit';
+   font-family: "Larsseit";
    src: url("../fonts/Larsseit-Medium.woff2") format("woff2"), url("../fonts/Larsseit-Medium.woff") format("woff");
    font-display: swap;
    font-weight: 500;
    font-style: normal;
 }
 @font-face {
-   font-family: 'Larsseit';
+   font-family: "Larsseit";
    src: url("../fonts/Larsseit-Bold.woff2") format("woff2"), url("../fonts/Larsseit-Bold.woff") format("woff");
    font-display: swap;
    font-weight: 700;
    font-style: normal;
 }
 @font-face {
-   font-family: 'Lato';
-   src: url('../fonts/Lato-Regular.woff2') format('woff2'), url('../fonts/Lato-Regular.woff') format('woff');
+   font-family: "Lato";
+   src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff");
    font-display: swap;
    font-weight: 400;
    font-style: normal;
 }
 @font-face {
-   font-family: 'Lato';
-   src: url('../fonts/Lato-Bold.woff2') format('woff2'), url('../fonts/Lato-Bold.woff') format('woff');
+   font-family: "Lato";
+   src: url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff");
    font-display: swap;
    font-weight: 700;
    font-style: normal;
 }
 @font-face {
-   font-family: 'Lato';
-   src: url('../fonts/Lato-Black.woff2') format('woff2'), url('../fonts/Lato-Black.woff') format('woff');
+   font-family: "Lato";
+   src: url("../fonts/Lato-Black.woff2") format("woff2"), url("../fonts/Lato-Black.woff") format("woff");
    font-display: swap;
    font-weight: 900;
    font-style: normal;
@@ -44,14 +44,161 @@
 /* 
 font-family: 'Roboto', sans-serif; (400, 500, 700, 900);
 font-family: 'Larsseit'; (400, 500, 700);
-font-family: 'Lato'; (400, 700, 900)
+font-family: 'Lato'; (400, 700, 900) - +cyrillic
  */
 
 /* ============================================================= */
-
-.text-block {
-   font-size: 24px;
+body {
+   font-family: "Lato";
 }
-.text-block p:not(:last-child) {
-   padding-bottom: 20px;
+h1 {
+   font-family: inherit;
+   font-weight: 900;
+   font-size: 28px;
+}
+h2 {
+   font-family: inherit;
+   font-weight: 700;
+   font-size: 25px;
+}
+h3 {
+   font-family: "Roboto", sans-serif;
+   font-weight: 500;
+   font-size: 22px;
+}
+h4 {
+   font-family: inherit;
+   font-weight: 700;
+   font-size: 20px;
+}
+h1,
+h2,
+h3,
+h4 {
+   margin-bottom: 12px;
+}
+div a > span {
+   font-size: 22px;
+   font-weight: 900;
+   color: blue;
+}
+div + a {
+   color: rgb(109, 0, 0);
+}
+p a {
+   color: red;
+}
+/* ================================================================= */
+.header-menu,
+.main,
+.footer {
+   padding: 20px;
+}
+div {
+   margin-bottom: 10px;
+}
+/* ======================= Header ======================= */
+.menu-item {
+   margin-bottom: 10px;
+}
+.menu-link {
+   font-size: 20px;
+   font-family: "Lato";
+   font-weight: 700;
+}
+.menu-item ul > li a {
+   font-size: 18px;
+   font-family: "Larsseit";
+   font-weight: 500;
+}
+.item-red {
+   color: red;
+}
+.item-orange {
+   color: rgb(211, 128, 4);
+}
+.item-yellow {
+   color: rgb(255, 208, 0);
+}
+.item-green {
+   color: green;
+}
+.item-blue {
+   color: blue;
+}
+.item-viollet {
+   color: violet;
+}
+
+/* ======================= Main sectiont ======================= */
+.grey p {
+   color: #444;
+}
+.title {
+   font-weight: 900;
+}
+p {
+   margin-bottom: 10px;
+}
+p {
+   color: #000;
+}
+.text-block p {
+   font-weight: 400;
+}
+.item-black > a,
+.title-black {
+   font-size: 28px;
+   font-weight: 900;
+   color: #000;
+}
+/* ======================= footer ======================== */
+.footer {
+}
+.footer-content {
+   font-size: 18px;
+}
+.footer-content h2 {
+   font-family: 'Times New Roman', Times, serif;
+   margin-bottom: 12px;
+}
+.larsseit {
+   font-family: 'Larsseit';   
+   
+}
+.larsseit-regular {
+   font-weight: 400;
+}
+.larsseit-medium {
+   font-weight: 500;
+}
+.larsseit-bold {
+   font-weight: 700;
+}
+.latto {
+   font-family: 'Lato';
+}
+.latto-regular {
+   font-weight: 400;
+}
+.latto-bold {
+   font-weight: 700;
+}
+.latto-black {
+   font-weight: 900;
+}
+.roboto {
+   font-family: 'Roboto', sans-serif;
+}
+.roboto-regular {
+   font-weight: 400;
+}
+.roboto-medium {
+   font-weight: 500;
+}
+.roboto-bold {
+   font-weight: 700;
+}
+.roboto-black {
+   font-weight: 900;
 }
