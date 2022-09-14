@@ -83,10 +83,10 @@ div a > span {
    color: blue;
 }
 div + a {
-   color: rgb(109, 0, 0);
+   color: #6d0000;
 }
 p a {
-   color: red;
+   color: #ff0000;
 }
 /* ================================================================= */
 .header-menu,
@@ -112,22 +112,22 @@ div {
    font-weight: 500;
 }
 .red {
-   color: red;
+   color: #ff0000;
 }
 .orange {
-   color: rgb(211, 128, 4);
+   color: #d38004;
 }
 .yellow {
-   color: rgb(255, 208, 0);
+   color: #ffd000;
 }
 .green {
-   color: green;
+   color: #008000;
 }
 .blue {
-   color: blue;
+   color: #0000ff;
 }
 .viollet {
-   color: violet;
+   color: #ee82ee;
 }
 .black {
    color: #222;
@@ -160,8 +160,6 @@ p {
    color: #000;
 }
 /* ======================= footer ======================== */
-.footer {
-}
 .footer-content {
    font-size: 18px;
 }
