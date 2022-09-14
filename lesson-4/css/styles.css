@@ -111,23 +111,26 @@ div {
    font-family: "Larsseit";
    font-weight: 500;
 }
-.item-red {
+.red {
    color: red;
 }
-.item-orange {
+.orange {
    color: rgb(211, 128, 4);
 }
-.item-yellow {
+.yellow {
    color: rgb(255, 208, 0);
 }
-.item-green {
+.green {
    color: green;
 }
-.item-blue {
+.blue {
    color: blue;
 }
-.item-viollet {
+.viollet {
    color: violet;
+}
+.black {
+   color: #222;
 }
 
 img {
