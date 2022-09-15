@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,700&display=swap");  /* font-family: 'Ubuntu'; */
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');    /* font-family: 'Nabla'; */
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap'); /* font-family: 'Bungee Spice'; */
+
+@font-face {
+   font-family: 'Montserrat';
+   src: url('../fonts/Montserrat-Medium.woff2') format('woff2'), url('../fonts/Montserrat-Medium.woff') format('woff');
+   font-display: swap;
+   font-weight: 500;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'Montserrat';
+   src: url('../fonts/Montserrat-MediumItalic.woff2') format('woff2'), url('../fonts/Montserrat-MediumItalic.woff') format('woff');
+   font-display: swap;
+   font-weight: 500;
+   font-style: italic;
+}
+@font-face {
+   font-family: 'Montserrat';
+   src: url('../fonts/Montserrat-SemiBold.woff2')format('woff2'), url('../fonts/Montserrat-SemiBold.woff') format('woff');
+   font-display: swap;
+   font-weight: 600;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'Montserrat';
+   src: url('../fonts/Montserrat-SemiBoldItalic.woff2')format('woff2'), url('../fonts/Montserrat-SemiBoldItalic.woff') format('woff');
+   font-display: swap;
+   font-weight: 600;
+   font-style: italic;
+}
+@font-face {
+   font-family: 'Montserrat';
+   src: url('../fonts/Montserrat-Bold.woff2')format('woff2'), url('../fonts/Montserrat-Bold.woff') format('woff');
+   font-display: swap;
+   font-weight: 700;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'Montserrat';
+   src: url('../fonts/Montserrat-BoldItalic.woff2')format('woff2'), url('../fonts/Montserrat-BoldItalic.woff') format('woff');
+   font-display: swap;
+   font-weight: 700;
+   font-style: italic;
+}
+@font-face {
+   font-family: 'final-fantasy';
+   src: url('../fonts/final-fantasy.woff2')format('woff2'), url('../fonts/final-fantasy.woff.woff') format('woff');
+   font-display: swap;
+   font-weight: 400;
+   font-style: normal;
+}
+/* =================================================================================== */
+.plan {
+   color: rgb(226, 162, 43);
+   font-size: 24px;
+   background: #333;
+   padding: 25px 15px;
+   line-height: 35px;
+   font-family: 'Montserrat';
+   font-weight: 500;
+   font-style: italic;
+}
+
+.plan > ul {
+   margin-left: 45px;
+   font-size: 22px;
+}
