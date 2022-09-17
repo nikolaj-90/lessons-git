@@ -1,14 +1,10 @@
 /* 
-font-family: 
-'Ubuntu'— 300, 400, 700
-'Nabla'— 400
-'Bungee Spice' — 400
+font-family: 'Nabla'— 400
 
 'Montserrat': 
-— 500 + italic
-— 600 + italic
-— 700 + italic
-'final-fantasy' — 400
+         — 500 + italic
+         — 600 + italic
+         — 700 + italic
 */
 body {
    font-family: "Montserrat";
@@ -19,12 +15,12 @@ h2 {
    font-weight: 700;
    text-align: center;
    color: wheat;
-
+   white-space: nowrap;
    margin: 0px 0px 35px 0px;
 }
 h1 {
    font-size: 32px;
-   text-shadow: -1px 2px 7px rgb(132, 130, 238), 2px -3px 2px violet;
+   text-shadow: -1px 1px 7px rgb(132, 130, 238), 2px -3px 2px violet;
 }
 h2 {
    font-size: 28px;
@@ -35,23 +31,28 @@ h2 {
    background: #333;
 }
 .header {
-   /* text-align: center; */
    margin: 0px 0px 40px;
    padding: 20px 0px 0px;
-   font-weight: 600;
+   font-weight: 700;
 }
 .menu-list {
-   font-size: 28px;
+   margin-left: -10%;
+   font-size: 20px;
    color: rgb(93, 0, 168);
+   /* text-align: right; */
 }
 .menu-list a {
-   margin-right: 30px;
-   line-height: 1.5;
-   display: inline-block;
+   line-height: 2;
    text-decoration: underline;
-   white-space: nowrap;
-   text-shadow: 0px 0px 8px yellow, -3px -2px 2px yellow;
+   text-transform: uppercase;
+   text-shadow: -3px -2px 2px yellow, 0px 0px 8px yellow;
 }
+.menu-list a span {
+   color: #fff;
+   text-shadow: none;
+   text-decoration: none;
+}
+/* ============================== Content =========================== */
 .box-one p {
    font-style: italic;
    font-weight: 600;
@@ -65,9 +66,10 @@ h2 {
    color: rgb(255, 123, 0);
    text-shadow: 0 0 15px #fff;
    font-size: 24px;
+   display: inline-block;
 }
 
-a span {
+.content a span {
    font-size: 30px;
    font-weight: 700;
    text-shadow: 0 -8px 10px rgb(202, 247, 143), 0 8px 10px rgb(240, 203, 40);
@@ -100,7 +102,7 @@ p {
 }
 .description a,
 .image-block span {
-   text-shadow: 0 0 10px yellow;
+   text-shadow: -1px -1px 2px #000, 0 0 10px yellow;
 }
 .description {
    word-spacing: 8px;
@@ -114,17 +116,19 @@ p {
 }
 .image-block + p {
    color: yellowgreen;
+   font-style: italic;
+   font-weight: 600;
 }
 .description a {
    text-decoration: underline;
 }
 
 /* ================= Footer ================= */
-.footer {
-   padding-bottom: 35px
+.footer-box {
+   padding-bottom: 35px;
 }
 
-.footer .text {
+.footer-box .text {
    text-align: center;
    font-size: 40px;
    font-family: "Nabla";
@@ -137,6 +141,9 @@ p {
    font-family: "Montserrat";
    font-weight: 300;
    font-style: italic;
+   box-shadow: 0 0 25px rgb(226, 48, 48);
+   border-radius: 10px;
+   padding: 40px 0px;
 }
 .plan p {
    color: rgb(31, 231, 138);
@@ -144,10 +151,4 @@ p {
 .plan p span {
    font-family: "Nabla";
 }
-.plan > li {
-}
-li {
-   font-style: italic;
-   font-size: 22px;
-   text-decoration: line-through;
-}
+

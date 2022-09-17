@@ -1,8 +1,6 @@
 /* ====================   F O N T S  ===================== */
 
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,700&display=swap");  /* font-family: 'Ubuntu'; */
 @import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');    /* font-family: 'Nabla'; */
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap'); /* font-family: 'Bungee Spice'; */
 
 @font-face {
    font-family: 'Montserrat';
@@ -45,11 +43,4 @@
    font-display: swap;
    font-weight: 700;
    font-style: italic;
-}
-@font-face {
-   font-family: 'final-fantasy';
-   src: url('../fonts/final-fantasy.woff2')format('woff2'), url('../fonts/final-fantasy.woff.woff') format('woff');
-   font-display: swap;
-   font-weight: 400;
-   font-style: normal;
 }
