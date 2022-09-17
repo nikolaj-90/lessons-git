@@ -1,69 +1,154 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,700&display=swap");  /* font-family: 'Ubuntu'; */
-@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');    /* font-family: 'Nabla'; */
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap'); /* font-family: 'Bungee Spice'; */
+/* 
+font-family: 
+'Ubuntu'— 300, 400, 700
+'Nabla'— 400
+'Bungee Spice' — 400
 
-@font-face {
-   font-family: 'Montserrat';
-   src: url('../fonts/Montserrat-Medium.woff2') format('woff2'), url('../fonts/Montserrat-Medium.woff') format('woff');
-   font-display: swap;
-   font-weight: 500;
-   font-style: normal;
+'Montserrat': 
+— 500 + italic
+— 600 + italic
+— 700 + italic
+'final-fantasy' — 400
+*/
+body {
+   font-family: "Montserrat";
+   color: #fff;
 }
-@font-face {
-   font-family: 'Montserrat';
-   src: url('../fonts/Montserrat-MediumItalic.woff2') format('woff2'), url('../fonts/Montserrat-MediumItalic.woff') format('woff');
-   font-display: swap;
-   font-weight: 500;
-   font-style: italic;
-}
-@font-face {
-   font-family: 'Montserrat';
-   src: url('../fonts/Montserrat-SemiBold.woff2')format('woff2'), url('../fonts/Montserrat-SemiBold.woff') format('woff');
-   font-display: swap;
-   font-weight: 600;
-   font-style: normal;
-}
-@font-face {
-   font-family: 'Montserrat';
-   src: url('../fonts/Montserrat-SemiBoldItalic.woff2')format('woff2'), url('../fonts/Montserrat-SemiBoldItalic.woff') format('woff');
-   font-display: swap;
-   font-weight: 600;
-   font-style: italic;
-}
-@font-face {
-   font-family: 'Montserrat';
-   src: url('../fonts/Montserrat-Bold.woff2')format('woff2'), url('../fonts/Montserrat-Bold.woff') format('woff');
-   font-display: swap;
+h1,
+h2 {
    font-weight: 700;
-   font-style: normal;
+   text-align: center;
+   color: wheat;
+
+   margin: 0px 0px 35px 0px;
 }
-@font-face {
-   font-family: 'Montserrat';
-   src: url('../fonts/Montserrat-BoldItalic.woff2')format('woff2'), url('../fonts/Montserrat-BoldItalic.woff') format('woff');
-   font-display: swap;
-   font-weight: 700;
-   font-style: italic;
+h1 {
+   font-size: 32px;
+   text-shadow: -1px 2px 7px rgb(132, 130, 238), 2px -3px 2px violet;
 }
-@font-face {
-   font-family: 'final-fantasy';
-   src: url('../fonts/final-fantasy.woff2')format('woff2'), url('../fonts/final-fantasy.woff.woff') format('woff');
-   font-display: swap;
-   font-weight: 400;
-   font-style: normal;
+h2 {
+   font-size: 28px;
+   text-shadow: 2px 1px 10px rgb(221, 112, 243), 2px -3px 2px rgb(236, 74, 236);
 }
-/* =================================================================================== */
-.plan {
-   color: rgb(226, 162, 43);
-   font-size: 24px;
+.wrapper {
+   padding: 0 15%;
    background: #333;
-   padding: 25px 15px;
-   line-height: 35px;
-   font-family: 'Montserrat';
-   font-weight: 500;
+}
+.header {
+   /* text-align: center; */
+   margin: 0px 0px 40px;
+   padding: 20px 0px 0px;
+   font-weight: 600;
+}
+.menu-list {
+   font-size: 28px;
+   color: rgb(93, 0, 168);
+}
+.menu-list a {
+   margin-right: 30px;
+   line-height: 1.5;
+   display: inline-block;
+   text-decoration: underline;
+   white-space: nowrap;
+   text-shadow: 0px 0px 8px yellow, -3px -2px 2px yellow;
+}
+.box-one p {
    font-style: italic;
+   font-weight: 600;
+   text-shadow: 0 0 5px coral;
+}
+.content {
+   margin: 0px 0px 60px;
+}
+.content > a {
+   margin: 0px 0px 0px -10%;
+   color: rgb(255, 123, 0);
+   text-shadow: 0 0 15px #fff;
+   font-size: 24px;
 }
 
-.plan > ul {
-   margin-left: 45px;
+a span {
+   font-size: 30px;
+   font-weight: 700;
+   text-shadow: 0 -8px 10px rgb(202, 247, 143), 0 8px 10px rgb(240, 203, 40);
+   color: rgb(255, 217, 0);
+}
+
+.text-block {
+   text-align: justify;
+   line-height: 30px;
+   font-size: 18px;
+}
+p {
+   padding: 0px 10%;
+   color: rgb(255, 174, 0);
+}
+.text-block > p {
+   text-indent: 15px;
+}
+.text-block > p {
+   margin: 0px 0px 18px 0px;
+}
+
+.image-block {
+   margin: 25px 0px;
+   text-align: right;
+}
+.image-block img {
+   width: 100%;
+   margin: 0px 0px 8px;
+}
+.description a,
+.image-block span {
+   text-shadow: 0 0 10px yellow;
+}
+.description {
+   word-spacing: 8px;
+   font-style: italic;
+   letter-spacing: 5px;
+   line-height: 1.8;
+   /* font-family: Ubuntu; */
+   font-weight: 300;
+   font-size: 16px;
+   color: rgb(235, 48, 179);
+   text-shadow: -3px 0px 2px #000;
+}
+.image-block + p {
+   color: yellowgreen;
+}
+.description a {
+   text-decoration: underline;
+}
+
+/* ================= Footer ================= */
+.footer {
+   padding-bottom: 35px
+}
+
+.footer .text {
+   text-align: center;
+   font-size: 40px;
+   font-family: "Nabla";
+   padding: 60px 0px;
+   text-shadow: -7px 10px 1px crimson, 0px -1px 10px rgb(220, 110, 20);
+}
+.plan {
+   font-size: 24px;
+   line-height: 35px;
+   font-family: "Montserrat";
+   font-weight: 300;
+   font-style: italic;
+}
+.plan p {
+   color: rgb(31, 231, 138);
+}
+.plan p span {
+   font-family: "Nabla";
+}
+.plan > li {
+}
+li {
+   font-style: italic;
    font-size: 22px;
+   text-decoration: line-through;
 }
