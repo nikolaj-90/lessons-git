@@ -50,7 +50,7 @@ h2 {
 .menu-list a span {
    color: #fff;
    text-shadow: none;
-   text-decoration: none;
+   
 }
 /* ============================== Content =========================== */
 .box-one p {
@@ -118,15 +118,14 @@ p {
    color: rgb(235, 48, 179);
    text-shadow: -3px 0px 2px #000;
 }
+.image-block ~ p {
+   color: #fff;
+}
 .image-block + p {
    color: yellowgreen;
    font-style: italic;
    font-weight: 600;
    text-decoration: none;
-}
-
-.image-block ~ p {
-   color: #fff;
 }
 .description a {
    text-decoration: underline;
