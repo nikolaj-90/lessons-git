@@ -3,27 +3,83 @@ font-family: 'Lato';
       — 400;
       — 700;
       — 900;
+
+font-family: Caveat; cursive — 700
+font-family: 'Montserrat Alternates'; —  200italic, 400, 700
+
 */
 body {
-   font-family: "Lato";
+   font-family: 'Montserrat Alternates'
 }
 .wrapper {
-   background: #222;
+}
+._block {
+   max-width: 1120px;
+   margin: 0px auto;
+   padding: 0px 20px;
+}
+/* ===================== Header ================== */
+.header,
+.header-india {
+   /* min-height: 100px; */
+   margin: 0px 0px 35px 0px;
    padding: 20px 0px;
+   background: #323644;
 }
-.header {
+.container {
 }
+.logo,
+.menu-items,
+.item {
+   display: inline-block;
+}
+.logo {
+   margin: 0px 30% 0px 0px;
+   font-size: 50px;
+   border: #fff solid 1px;
+   padding: 15px;
+   border-radius: 10px;
+   text-transform: uppercase;
+   font-family: "Caveat";
+   color: #fff;
+}
+.menu-items {
+   }
+.item {
+   font-family: 'Lato';
+   font-size: 50px;
+   padding: 20px;
+   border-radius: 50%;
+   box-shadow: 0 0 25px rgb(255, 174, 0), inset 0 0 15px #000;
+   background: #666;
+}
+.item a {
+   color: white;
+   text-shadow: 0 0 10px yellow;
+   }
+.item:not(:last-child) {
+   margin-right: 70px;
+}
+.green {
+   box-shadow: 0 0 25px rgb(72, 255, 0), inset 0 0 15px #000;
+}
+.link {
+}
+/* ====================== Main ================= */
 .main {
+   
 }
+/* ==================== Block-layout ============ */
 .block-layout {
    max-width: 810px;
-   margin: 0 auto;
+   margin: 0 auto 30px;
+   font-family: "Lato";
    background: #fff;
    padding: 25px 10px;
    box-sizing: content-box;
    box-shadow: 0 0 25px rgb(255, 174, 0);
    border-radius: 25px;
-   }
+}
 h1 {
    font-family: "Lato";
    font-weight: 900;
@@ -61,7 +117,7 @@ h1 {
 .text-thin p {
    margin: 0px 0px 24px 0px;
 }
-.text-thin.second ul li{
+.text-thin.second ul li {
    margin: 0px 0px 4px 32px;
    line-height: 1.6;
 }
@@ -72,6 +128,8 @@ h1 {
 }
 .first {
 }
-
+.header-india {
+   height: 80px;
+}
 .footer {
 }

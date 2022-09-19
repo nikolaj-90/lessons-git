@@ -1,5 +1,7 @@
 /* ========================= F O N T S ====================== */
 
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Montserrat+Alternates:ital,wght@0,400;0,700;1,200&display=swap');
+
 @font-face {
    font-family: "Lato";
    src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff");
