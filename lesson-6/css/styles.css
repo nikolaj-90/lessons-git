@@ -9,7 +9,7 @@ font-family: 'Montserrat Alternates'; —  300italic, 400, 700
 body {
    font-family: "Montserrat Alternates";
    font-size: 16px;
-   }
+}
 ._block {
    max-width: 1120px;
    margin: 0px auto;
@@ -118,8 +118,11 @@ h3 {
 }
 .block-india {
    text-align: center;
-   
-   }
+}
+.container-india {
+   max-height: 1700px;
+   overflow: auto;
+}
 
 .arrows {
 }
@@ -138,7 +141,7 @@ h3 {
 .data-source-text,
 .data-source-text + p {
    margin-bottom: 16px;
-   }
+}
 .data-source,
 .content-one,
 .content-one ~ div {
@@ -156,7 +159,7 @@ h3 {
 }
 .text-content > p {
    padding: 0px 0px 24px;
-   }
+}
 .content-list {
    margin-left: 25px;
 }
@@ -174,7 +177,7 @@ h3 {
    font-style: italic;
    padding: 8px 0px 0px 15px;
 }
-.content-three .text-content a{
+.content-three .text-content a {
    text-decoration: underline;
    color: red;
 }
