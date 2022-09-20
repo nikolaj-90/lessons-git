@@ -3,34 +3,32 @@ font-family: 'Lato';
       — 400;
       — 700;
       — 900;
-
-font-family: Caveat; cursive — 700
-font-family: 'Montserrat Alternates'; —  200italic, 400, 700
+font-family: 'Montserrat Alternates'; —  300italic, 400, 700
 
 */
 body {
-   font-family: 'Montserrat Alternates'
-}
-.wrapper {
-}
+   font-family: "Montserrat Alternates";
+   font-size: 16px;
+   }
 ._block {
    max-width: 1120px;
    margin: 0px auto;
    padding: 0px 20px;
 }
+.arrow {
+   font-family: "Lato";
+   font-size: 70px;
+   font-weight: 900;
+}
 /* ===================== Header ================== */
-.header,
-.header-india {
+.header {
    /* min-height: 100px; */
    margin: 0px 0px 35px 0px;
    padding: 20px 0px;
-   background: #323644;
-}
-.container {
+   background: #1c3335;
 }
 .logo,
-.menu-items,
-.item {
+.menu-item {
    display: inline-block;
 }
 .logo {
@@ -43,33 +41,16 @@ body {
    font-family: "Caveat";
    color: #fff;
 }
-.menu-items {
-   }
-.item {
-   font-family: 'Lato';
-   font-size: 50px;
-   padding: 20px;
-   border-radius: 50%;
-   box-shadow: 0 0 25px rgb(255, 174, 0), inset 0 0 15px #000;
-   background: #666;
+.menu-arrow {
+   color: #fff;
+   text-shadow: 0 10px 12px rgb(255, 174, 0), 0 -8px 12px rgb(255, 251, 0);
 }
-.item a {
-   color: white;
-   text-shadow: 0 0 10px yellow;
-   }
-.item:not(:last-child) {
-   margin-right: 70px;
-}
-.green {
-   box-shadow: 0 0 25px rgb(72, 255, 0), inset 0 0 15px #000;
-}
-.link {
-}
+
 /* ====================== Main ================= */
 .main {
-   
 }
 /* ==================== Block-layout ============ */
+
 .block-layout {
    max-width: 810px;
    margin: 0 auto 30px;
@@ -77,8 +58,9 @@ body {
    background: #fff;
    padding: 25px 10px;
    box-sizing: content-box;
-   box-shadow: 0 0 25px rgb(255, 174, 0);
+   box-shadow: 0 0 25px rgb(0, 81, 255);
    border-radius: 25px;
+   margin-bottom: 100px;
 }
 h1 {
    font-family: "Lato";
@@ -89,11 +71,10 @@ h1 {
 }
 .image-block {
    margin: 0px 0px 60px 0px;
-}
-.image-block img {
    max-width: 810px;
 }
-.text-block {
+.image-block img {
+   width: 100%;
 }
 .text-fat {
    font-weight: 700;
@@ -124,12 +105,79 @@ h1 {
 .text-thin.second ul {
    margin-bottom: 24px;
 }
-.second {
+/* ========================= Block india ========================= */
+h2 {
+   font-size: 32px;
+   padding: 32px 0px;
+   font-weight: 700;
 }
-.first {
+h3 {
+   font-size: 24px;
+   font-weight: 700;
+   padding: 24px 0px;
 }
-.header-india {
-   height: 80px;
+.block-india {
+   text-align: center;
+   
+   }
+
+.arrows {
 }
+.arrow-up {
+   display: inline-block;
+   margin-bottom: 30px;
+}
+.arrow {
+}
+.title {
+}
+.data-source {
+   text-align: left;
+   font-size: 15px;
+}
+.data-source-text,
+.data-source-text + p {
+   margin-bottom: 16px;
+   }
+.data-source,
+.content-one,
+.content-one ~ div {
+   text-align: left;
+   margin-bottom: 24px;
+}
+.title-content {
+}
+.image-content {
+   max-width: 1120px;
+   padding: 0px 0px 24px;
+}
+.image-content img {
+   width: 100%;
+}
+.text-content > p {
+   padding: 0px 0px 24px;
+   }
+.content-list {
+   margin-left: 25px;
+}
+.content-list > li {
+   list-style: inside;
+   margin: 0px 0px 16px 0px;
+   color: rgb(4, 45, 73);
+}
+.list-item {
+   text-decoration: underline;
+}
+.addition-image {
+   font-weight: 300;
+   font-size: 15px;
+   font-style: italic;
+   padding: 8px 0px 0px 15px;
+}
+.content-three .text-content a{
+   text-decoration: underline;
+   color: red;
+}
+/* ========================= Footer ========================= */
 .footer {
 }
