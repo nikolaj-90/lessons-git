@@ -50,14 +50,14 @@ body {
 /* =================================== Block-hidden ============================== */
 .block-hidden {
    margin-bottom: 75px;
-   display: none;
+   /* display: none; */
 }
 .content {
    position: relative;
    width: 1000px;
    height: 1000px;
    border-radius: 50%;
-   box-shadow: 0 0 50px rgb(25, 0, 255), inset 0 0 25px #fff;
+   box-shadow: -10px -15px 40px -5px rgb(0, 81, 255), 10px -5px 40px -5px rgb(0, 255, 13), -20px 15px 40px -5px rgb(255, 94, 0), inset 0 0 25px #fff;
    background: rgb(50, 53, 50);
    overflow: hidden;
    text-align: center;
