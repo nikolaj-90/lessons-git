@@ -4,6 +4,7 @@ font-family: 'Lato';
       — 700;
       — 900;
 font-family: 'Ubuntu'; —  300italic, 400, 700
+font-family: 'Comforter', cursive;
 
 */
 body {
@@ -22,8 +23,11 @@ body {
 /* ====================================== Header ======================================= */
 .header {
    margin: 0px 0px 35px 0px;
-   padding: 20px 0px;
-   background: #463921;
+   min-height: 100px;
+   background: #014642;
+}
+.header-container {
+   line-height: 80px;
 }
 .logo,
 .menu-item {
@@ -32,11 +36,10 @@ body {
 .logo {
    margin: 0px 30% 0px 0px;
    font-size: 50px;
-   border: #fff solid 1px;
    padding: 15px;
    border-radius: 10px;
    text-transform: uppercase;
-   font-family: "Caveat";
+   font-family: "Comforter";
    color: #fff;
 }
 .menu-arrow {
@@ -100,6 +103,9 @@ h1 {
 .text-thin.second ul {
    padding-bottom: 24px;
 }
+.main {
+   margin-bottom: 60px;
+}
 /* ======================================== Block india ============================================= */
 h2 {
    font-size: 32px;
@@ -113,13 +119,13 @@ h3 {
 }
 .block-india {
    text-align: center;
-   margin-bottom: 60px;
    border-left: 5px double rgb(255, 136, 0);
 }
 .container-india {
    max-height: 1700px;
    padding: 0px 5px;
    overflow: auto;
+   box-shadow: 5px 0px 8px rgb(255, 136, 0);
 }
 .arrow-up {
    display: inline-block;
@@ -149,7 +155,6 @@ a.item-third {
    width: 270px;
    height: 70px;
    padding: 17px;
-
    box-shadow: 0 0 15px rgb(2, 248, 2);
    border-radius: 50%;
    overflow: hidden;
@@ -233,7 +238,7 @@ p.text-addition {
 }
 /* ========================= Footer ========================= */
 .footer {
-   background: #000;
+   background: #1a2726;
    padding: 50px 0px;
 }
 .footer-container {
@@ -248,7 +253,7 @@ p.text-addition {
    font-size: 50px;
    border-radius: 50%;
    margin-right: 5%;
-   font-family: "lato";
+   font-family: "Comforter";
    text-transform: uppercase;
    color: #fff;
 }
