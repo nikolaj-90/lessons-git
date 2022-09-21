@@ -217,6 +217,9 @@ p.text-addition {
 .text-content > p {
    margin-bottom: 24px;
 }
+.text-content  p {
+   line-height: 1.3;
+}
 .content-list {
    margin-left: 25px;
 }
