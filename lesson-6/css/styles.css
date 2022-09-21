@@ -50,7 +50,7 @@ body {
 /* =================================== Block-hidden ============================== */
 .block-hidden {
    margin-bottom: 75px;
-   /* display: none; */
+   display: none;
 }
 .content {
    position: relative;
