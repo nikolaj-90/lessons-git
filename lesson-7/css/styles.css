@@ -3,10 +3,6 @@
 font-weight:   400 
                700
                900
-font-family: "Ubuntu"
-font-weight:   300 + itallic
-               400
-               700 */
 /* ============================================================= */
 [class*="__container"] {
    max-width: 820px;
