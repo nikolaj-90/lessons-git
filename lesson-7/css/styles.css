@@ -131,7 +131,9 @@ body {
 .share > a:not(:last-child) {
    margin-right: 17px;
 }
-
+.share a {
+   display: inline-block;
+}
 .image-block {
    margin-bottom: 60px;
 }

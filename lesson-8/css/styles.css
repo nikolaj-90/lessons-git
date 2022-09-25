@@ -1,0 +1,64 @@
+/* 
+font-family: "Lato";
+font-weight: 400 / 700 / 900;
+*/
+
+body {
+   font-family: "Lato";
+   font-size: 16px;
+}
+[class*="__container"] {
+   max-width: 1230px;
+   margin: 0 auto;
+   padding: 10px 5px;
+}
+/* ============================== Layout =============================== */
+.page {
+}
+.layout {
+}
+.layout__container {
+}
+.course-block {
+}
+/* ============================ Course block =========================== */
+.course-block {
+}
+.course {
+}
+.title {
+}
+.course__text-block {
+}
+._block-text {
+}
+.course__list-items {
+}
+.list-item {
+}
+/* =========================== Curator block =========================== */
+.curator-block {
+}
+.curator {
+}
+.curator__subtile {
+}
+.curator__title {
+}
+.course__description-curator {
+}
+.curator__rating {
+}
+.curator__text-block {
+}
+._block-text {
+}
+.curator__social {
+}
+.social-link {
+}
+.social-link- {
+}
+/* ================================== Footer ================================= */
+.footer {
+}
