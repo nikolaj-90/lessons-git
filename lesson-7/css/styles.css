@@ -1,0 +1,269 @@
+/* ============================= Fonts ======================= */
+/* font-family: "Lato"
+font-weight:   400 
+               700
+               900
+font-family: "Ubuntu"
+font-weight:   300 + itallic
+               400
+               700 */
+/* ============================================================= */
+[class*="__container"] {
+   max-width: 820px;
+   padding: 0px 5px;
+   margin: 0 auto;
+}
+[class*="__body"] {
+   max-width: 1100px;
+   margin: 0 auto;
+}
+body {
+   font-family: "Lato";
+   font-size: 16px;
+}
+/* ======================== Header =============================== */
+.header__container {
+   padding-top: 20px;
+   padding-bottom: 20px;
+   background: #fff;
+}
+.navigation {
+   padding: 16px 0px;
+   position: relative;
+}
+.navigation__logo,
+.menu {
+   display: inline-block;
+}
+.navigation__logo {
+   font-size: 22px;
+   font-weight: 900;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   padding-right: 20px;
+   margin-right: 60px;
+   background: url("../img/logo/logo-x.svg") 95px 2px/ 19px no-repeat;
+}
+.menu {
+   position: absolute;
+   top: 15px;
+}
+.menu .grey {
+   color: #888;
+}
+.menu .red {
+   color: #ff3f3a;
+}
+.menu__item {
+   line-height: 26px;
+   font-weight: 700;
+   color: #424551;
+   transition: all 0.3s ease 0s;
+}
+.menu__item:hover {
+   color: #ff3f3a;
+}
+
+.menu__item:not(:last-child) {
+   margin-right: 40px;
+}
+/* ================================= Home work ========================== */
+.home-work {
+   margin-bottom: 50px;
+   padding-bottom: 50px;
+
+   border-bottom: 3px double #424551;
+}
+.home-work__container {
+   background: #fff;
+}
+.article-items {
+   margin-bottom: 12px;
+}
+.item {
+   display: inline-block;
+   color: #424551;
+}
+.artical-item-one {
+   border-right: 1px solid #787a80;
+   padding: 0 12px 0 20px;
+   margin-right: 12px;
+   background: url("../img/icons/icon-001.svg") no-repeat;
+}
+.artical-item-one + div {
+   color: #ff3f3a;
+   font-weight: 700;
+}
+.title {
+   font-size: 46px;
+   font-weight: 900;
+   line-height: 1.3;
+   margin: 0px 0px 26px;
+}
+.condition {
+   position: relative;
+   color: #787a80;
+   margin-bottom: 40px;
+}
+.condition div {
+   display: inline-block;
+}
+.condition-block-duration > div:not(:last-child) {
+   margin-right: 24px;
+}
+.condition-item-date,
+.condition-item-time {
+   padding: 0 0 0 24px;
+   line-height: 1.6;
+}
+.condition-item-date {
+   background: url("../img/icons/icon-01.svg") 0 5px no-repeat;
+}
+.condition-item-time {
+   background: url("../img/icons/icon-02.svg") 0 5px no-repeat;
+}
+.condition-block-social {
+   position: absolute;
+   top: 5px;
+   right: 0;
+}
+.share > span {
+   font-weight: 700;
+   color: #1e212c;
+   margin-right: 12px;
+}
+.share > a:not(:last-child) {
+   margin-right: 17px;
+}
+
+.image-block {
+   margin-bottom: 60px;
+}
+.image-block {
+   max-width: 810px;
+   margin-bottom: 60px;
+}
+.image-block img {
+   width: 100%;
+}
+.text-block {
+   margin-bottom: 60px;
+}
+.text-block p,
+ul > li {
+   line-height: 1.6;
+   color: #424551;
+}
+.text-block > p:not(:last-child) {
+   margin-bottom: 24px;
+}
+.text-block > ul {
+   margin-bottom: 24px;
+}
+.text-block p + div > p {
+   margin-bottom: 24px;
+}
+p ~ div {
+   margin-bottom: 48px;
+}
+ul > li {
+   background: url("../img/icons/icon-04.svg") 0px 5px no-repeat;
+   padding: 0px 0px 0px 32px;
+   margin: 0px 0px 4px 0px;
+}
+.text-bold {
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 1.5;
+   color: #1e212c;
+}
+.decor {
+   padding: 0px 0px 0px 58px;
+   background: url("../img/icons/icon-03.svg") 18px 0 no-repeat, url("../img/icons/icon-03.svg") no-repeat;
+}
+.feedback-block {
+   position: relative;
+}
+.feedback-block div {
+   display: inline-block;
+}
+.feedback-block span,
+span ~ div {
+   margin-right: 12px;
+}
+.tag-element {
+   font-weight: 700;
+   line-height: 1.5;
+   color: #787a80;
+   padding: 5.5px 16px;
+   border: 1px solid #d7dadd;
+   border-radius: 4px;
+}
+.block-share {
+   position: absolute;
+   top: 10px;
+   right: 0;
+}
+/* ======================================== Gallery =========================================== */
+.gallery {
+   background: linear-gradient(
+      135deg,
+      rgba(30, 87, 153, 1) 0%,
+      rgba(30, 87, 153, 0.95) 13%,
+      rgba(37, 150, 237, 0.81) 46%,
+      rgba(35, 219, 207, 0.71) 69%,
+      rgba(106, 242, 178, 0.58) 100%
+   );
+}
+.gallery-block {
+   padding: 50px 10px;
+}
+.block-bg {
+   height: 1500px;
+   text-align: center;
+   background: url("../img/freelancer/avatar.jpg") repeat-x 0 65%,
+      url("../img/gallery/Sen-Trope-9.jpg") no-repeat 15% 47% / 580px,
+      url("../img/freelancer/avatar_3.jpg") repeat-y 3% 0,
+      url("../img/gallery/Sen-Trope-7.jpg") no-repeat 15px 93% / 410px,
+      url("../img/gallery/Sen-Trope-10.jpeg") no-repeat 99% 30% / 410px,
+      url("../img/gallery/Sen-Trope-13.jpeg") no-repeat 80% 80% / 310px,
+      url("../img/gallery/Sen-Trope-5.jpg") 500px 0px / 370px no-repeat,
+      url("../img/gallery/Sen-Trope-8.jpg") no-repeat 98% 99% / 380px,
+      url("../img/gallery/Sen-Trope-6.jpg") no-repeat 98% 170px / 300px,
+      url("../img/gallery/Sen-Trope-14.jpg") no-repeat 50% 86% / 425px,
+      url("../img/gallery/Sen-Trope-4.jpg") 251px 168px / 500px no-repeat,
+      url("../img/gallery/Sen-Trope-1.jpg") 0 0 / 450px no-repeat,
+      linear-gradient(
+         135deg,
+         rgba(30, 87, 153, 1) 0%,
+         rgba(30, 87, 153, 0.75) 13%,
+         rgba(37, 150, 237, 0.61) 46%,
+         rgba(35, 219, 207, 0.51) 69%,
+         rgba(106, 242, 178, 0.38) 100%
+      ),
+      url("../img/gallery/Sen-Trope-4.jpg") 0 0 / cover no-repeat fixed;
+}
+.block-bg span {
+   font-size: 55px;
+   font-weight: 900;
+   line-height: 1500px;
+   text-transform: uppercase;
+   color: blue;
+   text-shadow: 0 0 20px yellow, 0 -10px 20px rgb(255, 17, 0), 0 10px 20px rgb(247, 0, 255),
+      -15px 0 20px rgb(14, 3, 117), 15px 0 20px #fff;
+}
+/* ========================= Footer ============================ */
+.footer-text {
+   background: #1e212c;
+   text-align: center;
+   color: #fff;
+   font-size: 55px;
+   padding: 25px 0px;
+   letter-spacing: 8px;
+}
+.footer-link {
+   margin: 0px 50px;
+   font-size: 80px;
+   color: rgb(214, 214, 245);
+   text-shadow: 0 -5px 15px blue, 0 10px 15px rgb(255, 153, 0), 12px 0 15px rgb(255, 0, 0), -12px 0 15px rgb(255, 0, 0);
+}
