@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,18 +10,24 @@
    <link rel="stylesheet" href="css/styles.css">
    <title>lesson-8</title>
 </head>
+
 <body>
-   <header class="header"></header>
+   <header class="header">
+      <div class="header__container">
+         THIS IS THE HEADER
+         <a class="button" href="#layout"></a>
+      </div>
+   </header>
    <main class="page">
-      <div class="layout">
+      <div id="layout" class="layout__page">
          <div class="layout__container">
             <div class="course-block course">
-               <h1 class="title">About the course</h1>
+               <h1 class="course__title">About the course</h1>
                <div class="course__text-block _block-text">
                   <p>Bibendum vulputate adipiscing venenatis at est, a eu tincidunt. Leo aenean congue in sagittis, felis maecenas amet varius at. Pellentesque euismod in faucibus at elementum. Tellus maecenas libero est tempus sit cras at malesuada diam. Consequat senectus dictumst non hac dignissim montes, pretium, egestas molestie. Sed magna aliquet ornare nibh vel lectus diam eget pretium. Lorem risus nunc tincidunt tortor, mi nulla pellentesque</p>
                </div>
-               <h3>You will learn:</h3>
                <ul class="course__list-items">
+                  <h3 class="course-sub-title">You will learn:</h3>
                   <li class="list-item">A fermentum in morbi pretium aliquam adipiscing donec tempus.</li>
                   <li class="list-item">Vulputate placerat amet pulvinar lorem nisl.</li>
                   <li class="list-item">Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
@@ -36,31 +43,57 @@
                   <p>Senior UX designer in IT Product Company</p>
                </div>
                <div class="curator__rating">
-                  <p>4.9 rate</p>
-                  <p>4 courses</p>
-                  <p>350 students</p>
+                  <p class="curator__rating-one">4.9 rate</p>
+                  <p class="curator__rating-two">4 courses</p>
+                  <p class="curator__rating-three">350 students</p>
                </div>
                <div class="curator__text-block _block-text">
                   <p>Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis, vulputate venenatis fermentum ante. Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea id habitasse proin. Nullam sit nec ipsum posuere non. Nam vel aliquam tristique sollicitudin interdum quam.</p>
                </div>
-               <div class="curator__social social-link">
-                  <a href="" class="social-link-">
-                     <img src="img/socials/faceboock.svg" alt="faceboock">
+               <div class="curator__social">
+                  <a href="" class="social-link-faceboock">
                   </a>
-                  <a href="" class="social-link-">
-                     <img src="img/socials/be.svg" alt="be sign">
+                  <a href="" class="social-link-be">
                   </a>
-                  <a href="" class="social-link-">
-                     <img src="img/socials/twitter.svg" alt="twitter">
+                  <a href="" class="social-link-twitter">
                   </a>
-                  <a href="" class="social-link-">
-                     <img src="img/socials/in.svg" alt="in sign">
+                  <a href="" class="social-link-in">
                   </a>
                </div>
+            </div>
+            <div class="border__container border"></div>
+         </div>
+      </div>
+      <div class="practice">
+         <div class="practice__container">
+            <div class="practice-menu">
+               <ul class="practice-menu__items">
+                  <li class="practice-menu__item"><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/Pseudo-classes" class="practice-menu__link link">Pseudoclasses</a></li>
+                  <li class="practice-menu__item"><a href="#" class="practice-menu__link link">item-2</a>
+                     <ul class="subparagraph">
+                        <li class="subparagraph-item"><a  class="subparagraph__link link" target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/Pseudo-elements">sub-item-1</a></li>
+                        <li class="subparagraph-item">sub-item-2</li>
+                        <li class="subparagraph-item">sub-item-3</li>
+                     </ul>
+                  </li>
+                  <li class="practice-menu__item"><a href="#" class="practice-menu__link link">item-3</a>
+                     <ul class="subparagraph">
+                        <li class="subparagraph-item">sub-item-1</li>
+                        <li class="subparagraph-item"><a href="#" class="subparagraph-link">sub-item-2</a>
+                        </li>
+                        <li class="subparagraph-item">sub-item-3</li>
+                     </ul>
+                  </li>
+               </ul>
             </div>
          </div>
       </div>
    </main>
-   <footer class="footer"></footer>
+   <footer class="footer">
+      <div class="footer__container">
+         footer
+      </div>
+   </footer>
 </body>
+
 </html>

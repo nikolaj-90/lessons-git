@@ -13,8 +13,7 @@ li {
 a {
    color: inherit;
 }
-a:link,
-a:visited {
+a {
    text-decoration: none;
 }
 a:hover {
@@ -35,15 +34,15 @@ h6 {
 input,
 button,
 textarea {
-	font-family: inherit;
-	font-size: inherit;
+   font-family: inherit;
+   font-size: inherit;
 }
 button {
-	cursor: pointer;
-	color: inherit;
-	background: inherit;
+   cursor: pointer;
+   color: inherit;
+   background: inherit;
 }
 body {
-	line-height: 1;
+   line-height: 1;
 }
 /* ======================================== */
