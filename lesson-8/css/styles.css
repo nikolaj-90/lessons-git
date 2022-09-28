@@ -156,7 +156,8 @@ h6 {
    margin-bottom: 4px;
 }
 .curator__rating-one::before,
-.curator__rating-one ~ p::before {
+.curator__rating-two::before, 
+.curator__rating-three::before {
    content: "";
    margin-right: 9px;
    width: 15px;
