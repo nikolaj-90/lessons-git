@@ -93,8 +93,7 @@ h6 {
 }
 .course__list-items > li::before {
    content: "";
-   margin-left: -32px;
-   margin-right: 16px;
+   margin: 0px 16px 0px -32px;
    width: 16px;
    height: 16px;
    background: url("../img/icons/check.svg") 0 0 no-repeat;
@@ -157,8 +156,7 @@ h6 {
    margin-bottom: 4px;
 }
 .curator__rating-one::before,
-.curator__rating-two::before,
-.curator__rating-three::before {
+.curator__rating-one ~ p::before {
    content: "";
    margin-right: 9px;
    width: 15px;
@@ -199,13 +197,11 @@ h6 {
 .curator__social a:not(:last-child) {
    margin-right: 25px;
 }
+
 .social-link-faceboock::before,
-.social-link-be::before,
-.social-link-twitter::before,
-.social-link-in::before {
+.social-link-faceboock ~ a::before {
    content: "";
    display: inline-block;
-   /* transition: all 0.5s ease 0s; */
 }
 .social-link-faceboock::before {
    width: 12px;
@@ -251,6 +247,146 @@ h6 {
 .social-link-in:active::before {
    background: url("../img/socials/in-yellow.svg");
 }
+/* ================================== Practice ================================= */
+.practice-button {
+   display: inline-block;
+   width: 100px;
+   height: 100px;
+   text-align: center;
+   line-height: 100px;
+   background: #1e212c;
+   color: #fff;
+   border-radius: 30%;
+   margin-bottom: 30px;
+   text-transform: lowercase;
+   text-decoration: underline;
+   font-size: 18px;
+   overflow: hidden;
+}
+/* ================================== Practice ================================= */
+.practice {
+   margin-bottom: 50px;
+}
+.practice-menu {
+   display: none;
+   height: 300px;
+}
+.practice-menu:target {
+   display: block;
+}
+.practice-menu__items li {
+   font-size: 25px;
+   line-height: 2;
+   color: blue;
+}
+.practice-menu__items ul {
+   padding-left: 15px;
+}
+.practice-menu__items li:hover ul {
+   display: block;
+}
+.link:visited {
+   color: rgb(241, 54, 7);
+}
+.practice-menu__item a:focus {
+   outline: 5px solid rgb(8, 241, 8);
+}
+.subparagraph {
+   display: none;
+   color: rgb(226, 101, 43);
+}
+.subparagraph li:hover ul {
+   display: block;
+}
+/* =============================== Lions block =============================== */
+.practice-lions {
+   color: #000;
+   background: url("../img/lions/lion-04.jpg") right 90% / 410px no-repeat,
+      url("../img/lions/lion-03.jpg") center / 350px no-repeat,
+      url("../img/lions/lion-02.jpg") 20px 100px / 400px no-repeat,
+      url("../img/lions/lion-05.jpg") 10% bottom / auto 250px no-repeat,
+      url("../img/lions/lion-01.jpg") 0 0 / cover no-repeat fixed;
+}
+.lions-text {
+   padding: 15px 10px;
+}
+.lion-title-main {
+   text-align: center;
+   font-size: 32px;
+   font-weight: 900;
+   text-decoration: underline;
+   line-height: 1.6;
+}
+.lions-text div:nth-last-of-type(odd) h3 {
+   font-size: 24px;
+   font-weight: 700;
+   color: #fff;
+   text-shadow: 0 0 10px #000;
+   text-align: right;
+   margin-bottom: 15px;
+}
+.lions-text div:nth-last-of-type(even) h3 {
+   font-size: 28px;
+   font-weight: 700;
+   color: #fff;
+   text-shadow: 0 0 10px rgb(139, 5, 5);
+   text-align: right;
+   margin-bottom: 15px;
+}
+.lion-title-main:not(:last-child) {
+   margin-bottom: 35px;
+}
+.lions-text div:nth-child(1) p {
+   color: rgb(255, 217, 0);
+   font-weight: 700;
+   line-height: 1.6;
+   text-shadow: 0 0 10px #000;
+}
+.lions-text div:nth-child(1) p:not(:last-child) {
+   margin-bottom: 5px;
+}
+.lions-text div:nth-child(2) p {
+   color: red;
+   font-weight: 700;
+   text-shadow: 0 0 10px #000;
+}
+.lions-text div:nth-child(2) p:last-child {
+   color: green;
+   font-weight: 900;
+}
+.lions-text div:nth-child(2) p:not(:last-child) {
+   margin-bottom: 8px;
+   }
+   .lions-text div:nth-child(3) p:nth-child(odd) {
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: rgb(0, 38, 255);
+      text-shadow: 0 0 10px #000;
+   }
+   .lions-text div:nth-child(3) p:nth-child(even) {
+      font-size: 18px;
+      line-height: 1.5;
+      color: #faff;
+   }
+   .lions-text div:nth-child(3) p:not(:last-child) {
+      margin-bottom: 12px;
+   }
+   .lions-text div:nth-child(4) {
+      text-shadow: 0 0 10px #fff;
+      font-size: 18px;
+      font-weight: 700;
+   }
+   .lions-text div:nth-child(4) p:not(:last-child) {
+      margin-bottom: 10px;
+   }
+   .lions-text div:nth-child(5) p:nth-child(2) {
+      color: rgb(255, 2, 171);
+      text-decoration: underline;
+      font-size: 20px;
+   }
+   .lions-text div:nth-child(5) p:not(:last-child) {
+      margin-bottom: 10px;
+   }
 /* ================================== Footer ================================= */
 .footer {
    background: linear-gradient(
@@ -280,39 +416,3 @@ h6 {
    font-size: 30px;
 }
 /* ============================== Practice ================================= */
-.practice {
-   margin-bottom: 50px;
-}
-.practice-menu {
-   height: 300px;
-}
-.practice-menu__items li {
-   font-size: 25px;
-   line-height: 2;
-   color: blue;
-}
-.practice-menu__items ul {
-   padding-left: 15px;
-}
-.practice-menu__items li:hover ul {
-   display: block;
-}
-.link:visited {
-   color: green;
-}
-.practice-menu__item a:focus {
-   outline: 5px solid rgb(8, 241, 8);
-}
-.practice-menu__link {
-}
-.subparagraph {
-   display: none;
-   color: rgb(226, 101, 43);
-}
-.subparagraph li:hover ul {
-   display: block;
-}
-
-.sub-subparagraph > li {
-   display: none;
-}
