@@ -100,6 +100,7 @@ body {
 }
 .image {
    max-width: 100%;
+   display: block;
 }
 .image:not(:last-child) {
    margin-bottom: 25px;
@@ -107,6 +108,9 @@ body {
 .image img {
    width: 100%;
    border-radius: 25px;
+}
+.image-block {
+   margin-bottom: 30px;
 }
 /* ==========================Game-block =============================== */
 .game-block {
@@ -243,15 +247,24 @@ body {
    width: 15px;
    height: 45px;
 }
-.game-element-end {
-   width: 40px;
-   height: 40px;
-   line-height: 40px;
+.game-element-end {   
+   font-size: 14px; 
+   font-weight: 700;  
+   color: #555;
    text-align: center;
-   margin: -4px 0 0 510px;
-   border-radius: 63%;
+   margin: -4px 0 0 450px;
+   padding: 10px 15px;
+   border-radius: 20px 5px 20px 5px;
    box-shadow: inset 0 0 15px 5px #59d752;
+   transition: all .8s ease 0s;
 }
+.game-element-end:hover{
+   background: #888;
+}
+.game-link:hover {
+   color: #f7a000;
+   text-shadow: -2px 1px 8px #000;
+   }
 .game-link {
    visibility: hidden;
 }
