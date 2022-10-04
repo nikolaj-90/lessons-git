@@ -2,28 +2,28 @@
 @font-face {
    font-family: "okolaks";
    src: url("../fonts/okolaksRegular.woff2") format("woff2"), url("../fonts/okolaksRegular.woff") format("woff");
-   display: swap;
+   font-display: swap;
    font-weight: 400;
    font-style: normal;
 }
 @font-face {
    font-family: "okolaks";
    src: url("../fonts/okolaksRegularItalic.woff2") format("woff2"), url("../fonts/okolaksRegularItalic.woff") format("woff");
-   display: swap;
+   font-display: swap;
    font-weight: 400;
    font-style: italic;
 }
 @font-face {
    font-family: "okolaks";
    src: url("../fonts/okolaksBold.woff2") format("woff2"), url("../fonts/okolaksBold.woff") format("woff");
-   display: swap;
+   font-display: swap;
    font-weight: 700;
    font-style: normal;
 }
 @font-face {
    font-family: "okolaks";
    src: url("../fonts/okolaksBoldItalic.woff2") format("woff2"), url("../fonts/okolaksBoldItalic.woff") format("woff");
-   display: swap;
+   font-display: swap;
    font-weight: 700;
    font-style: italic;
 }
