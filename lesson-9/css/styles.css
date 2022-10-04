@@ -132,6 +132,7 @@ body {
    margin-bottom: 20px;
    padding: 20px;
    box-sizing: content-box;
+   border-radius: 2%;
    visibility: visible;
 }
 .game-element-start,
@@ -258,6 +259,10 @@ body {
    box-shadow: inset 0 0 15px 5px #59d752;
    transition: all .8s ease 0s;
 }
+.game-link {
+   visibility: hidden;
+   transition: all .8s ease 0s;
+}
 .game-element-end:hover{
    background: #888;
 }
@@ -265,9 +270,6 @@ body {
    color: #f7a000;
    text-shadow: -2px 1px 8px #000;
    }
-.game-link {
-   visibility: hidden;
-}
 /* ======================= Footer ========================== */
 .footer {
    background-color: rgb(60, 63, 245);
