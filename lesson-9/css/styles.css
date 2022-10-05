@@ -38,6 +38,11 @@ body {
 ._brown {
    color: #dc945a;
 }
+._red {
+   box-shadow: 0px 0px 20px 5px rgb(248, 121, 2);
+   border: 1px solid #f75e05;
+   color: #f75e05;
+}
 /* =========================== Header ================================= */
 .header-content {
    background: rgb(10, 163, 252);
