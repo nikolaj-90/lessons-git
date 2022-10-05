@@ -1,5 +1,8 @@
-/*   font-family: "okolaks"; 
+/*    font-family: "okolaks"; 
       font-weight: 400/700 + italic
+======================================
+      font-family: "lato"; 
+      font-weight: 400/700/900      
  */
 
 [class*="__container"] {
@@ -7,6 +10,11 @@
    box-sizing: content-box;
    padding: 0px 20px;
    margin: 0 auto;
+}
+[class*="__section"] {
+   max-width: 1250px;
+   margin: 0 auto;
+   padding: 0px 10px;
 }
 body {
    font-family: "okolaks";
@@ -25,18 +33,14 @@ body {
    border-radius: 50%;
    color: #03b61a;
    box-shadow: 0px 0px 20px 5px #fff;
-   text-shadow: 2px 1px 5px #000, -2px 1px 5px #000;;
+   text-shadow: 2px 1px 5px #000, -2px 1px 5px #000;
 }
 ._brown {
-   color: #dc945a;;
+   color: #dc945a;
 }
 /* =========================== Header ================================= */
-.header {
-}
 .header-content {
    background: rgb(10, 163, 252);
-}
-.header__container {
 }
 .header-text {
    text-align: center;
@@ -69,7 +73,7 @@ body {
 }
 .navigation-link {
    padding: 0px 5px;
-   transition: all .2s ease 0s;
+   transition: all 0.2s ease 0s;
 }
 .navigation-link:hover {
    color: #f2f2f2;
@@ -93,10 +97,6 @@ body {
 }
 .home-work:target {
    display: block;
-}
-.home-work__container {
-}
-.home-work__content {
 }
 .image {
    max-width: 100%;
@@ -201,7 +201,6 @@ body {
    margin: -2px 0px 0px 13px;
    border-radius: 0 0 0 30%;
 }
-
 .game-element-2 {
    width: 500px;
    height: 30px;
@@ -225,7 +224,6 @@ body {
    height: 50px;
    border-radius: 0 0 0 10px;
 }
-
 .game-element-6 {
    margin: 3px 0px 0px -13px;
    width: 472px;
@@ -248,28 +246,101 @@ body {
    width: 15px;
    height: 45px;
 }
-.game-element-end {   
-   font-size: 14px; 
-   font-weight: 700;  
+.game-element-end {
+   font-size: 14px;
+   font-weight: 700;
    color: #555;
    text-align: center;
    margin: -4px 0 0 450px;
    padding: 10px 15px;
    border-radius: 20px 5px 20px 5px;
    box-shadow: inset 0 0 15px 5px #59d752;
-   transition: all .8s ease 0s;
+   transition: all 0.8s ease 0s;
 }
 .game-link {
    visibility: hidden;
-   transition: all .8s ease 0s;
+   transition: all 0.8s ease 0s;
 }
-.game-element-end:hover{
+.game-element-end:hover {
    background: #888;
 }
 .game-link:hover {
    color: #f7a000;
    text-shadow: -2px 1px 8px #000;
+}
+/* ==================== Layout block ======================= */
+.layout-block {
+   font-family: "lato";
+   color: #424551;
+   display: none;
+   padding-top: 20px;
+   margin: 0px 0px 100px 0px;
+}
+.layout-block:target {
+   display: block;
+}
+.about-us__section {
+   display: flex;
+}
+.description-block {
+   max-width: 600px;
+   margin-right: 165px;
+}
+.about-us__sub-title {
+   font-weight: 700;
+   line-height: 1.5;
+   color: #1e212c;
+   letter-spacing: 1px;
+   margin-bottom: 8px;
+}
+.about-us__title {
+   font-weight: 900;
+   font-size: 46px;
+   line-height: 1.3;
+   color: #1e212c;
+   margin-bottom: 48px;
+}
+.about-us__text-block .bold:not(:last-child) {
+   margin-bottom: 24px;
+}
+.about-us__text-block:not(:last-child) {
+   margin-bottom: 60px;
+}
+.bold {
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 1.5;
+   color: #1e212c;
+}
+.about-us__text-block > p {
+   line-height: 1.6;
+}
+.button__about-us {
+   display: inline-block;
+   font-weight: 700;
+   line-height: 3.2;
+   padding: 0px 40px;
+   text-align: center;
+   letter-spacing: 0.5px;
+   border: 1px solid transparent;
+   border-radius: 4px;
+   background: linear-gradient(#fff, #fff) padding-box, linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+   transition: all .5s ease 0s;
+}
+.button__about-us:hover {
+   background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+   color: #fff;
+}
+.button__about-us:not(:last-child) {
+   margin-right: 24px;
+}
+.image__about-us {
+   display: inline-block;
+   max-width: 465px;
    }
+.image__about-us img {
+   width: 100%;
+}
 /* ======================= Footer ========================== */
 .footer {
    background-color: rgb(60, 63, 245);
