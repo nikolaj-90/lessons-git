@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap");
+/* 
+font-family: "Sarala";
+font-weight: 400/700;
+*/
+body {
+   font-family: "Sarala";
+}
+
+[class*="__container"] {
+   max-width: 900px;
+   margin: 0 auto;
+}
+.who-we-are__image {
+   max-width: 700px;
+}
+.who-we-are__image img {
+   width: 100%;
+}
+.card__image {
+   max-width: 215px;
+}
+.card__image img {
+   width: 100%;
+}
+.statistic__image {
+   max-width: 810px;
+}
+.statistic__image img {
+   width: 100%;
+}
