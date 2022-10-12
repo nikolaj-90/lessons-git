@@ -11,173 +11,182 @@
 </head>
 
 <body>
-   <header class="header">
-      <div class="header__container">
-         <div class="header__logo">LOGO</div>
-         <div class="header__menu menu">
-            <ul class="menu__list">
-               <li class="menu__item"><a href="" class="menu__link">Link</a></li>
-               <li class="menu__item"><a href="" class="menu__link">Link</a></li>
-               <li class="menu__item"><a href="" class="menu__link">Link</a></li>
-               <li class="menu__item"><a href="" class="menu__link">Link</a></li>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container">
+            <a id="logo" class="header__logo" href="#nav-list">logo</a>
+            <ul class="header__list">
+               <li class="header__item"><a title="who we are — Блок" href="#who-we-are" class="menu__link">секція 1</a></li>
+               <li class="header__item"><a title="courses — Блок" href="#courses" class="menu__link">секція 2</a></li>
+               <li class="header__item"><a title="statistic — Блок" href="#statistic" class="menu__link">секція 3</a></li>
             </ul>
          </div>
-      </div>
-   </header>
-   <main class="main">
-      <div class="main__who-we-are who-we-are">
-         <div class="who-we-are__container">
-            <div class="who-we-are__image">
-               <img src="img/who-we-are/image.jpg" alt="girl in headphones">
-            </div>
-            <div class="who-we-are__body">
-               <h1 class="who-we-are__title title">Who we are</h1>
-               <h2 class="who-we-are__subtitle subtitle">Why Createx?</h2>
-               <ul class="who-we-are__list">
-                  <li class="who-we-are__item">A fermentum in morbi pretium aliquam adipiscing donec tempus.</li>
-                  <li class="who-we-are__item">Vulputate placerat amet pulvinar lorem nisl.</li>
-                  <li class="who-we-are__item">Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
-                  <li class="who-we-are__item">Etiam duis lobortis in fames ultrices commodo nibh.</li>
-                  <li class="who-we-are__item">Tincidunt sagittis neque sem ac eget.</li>
-                  <li class="who-we-are__item">Ultricies amet justo et eget quisque purus vulputate dapibus tortor.</li>
-               </ul>
-               <a href="" class="who-we-are__button button who-we-are__small--button">More about us</a>
+      </header>
+      <main class="main">
+         <div id="who-we-are" class="main__who-we-are who-we-are">
+            <div class="who-we-are__container">
+               <div class="who-we-are__image">
+                  <img src="img/who-we-are/image.jpg" alt="girl in headphones">
+               </div>
+               <div class="who-we-are__body">
+                  <h1 class="who-we-are__title title">Who we are</h1>
+                  <h2 class="who-we-are__subtitle subtitle">Why Createx?</h2>
+                  <ul class="who-we-are__list list">
+                     <li class="list__item">A fermentum in morbi pretium aliquam adipiscing donec tempus.</li>
+                     <li class="list__item">Vulputate placerat amet pulvinar lorem nisl.</li>
+                     <li class="list__item">Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
+                     <li class="list__item">Etiam duis lobortis in fames ultrices commodo nibh.</li>
+                     <li class="list__item">Tincidunt sagittis neque sem ac eget.</li>
+                     <li class="list__item">Ultricies amet justo et eget quisque purus vulputate dapibus tortor.</li>
+                  </ul>
+                  <a href="#logo" title="До гори, до logo" class="who-we-are__button button">More about us</a>
+               </div>
             </div>
          </div>
-      </div>
-      <div class="main__courses courses">
-         <div class="courses__container">
-            <h2 class="courses__title title">Ready to learn?</h2>
-            <h3 class="courses__subtitle subtitle">Featured Courses</h3>
-            <div class="courses__body">
-               <a class="courses__card card" href="">
-                  <div class="card__image">
-                     <img src="img/courses/image-01.jpg" alt="curator">
+         <div id="courses" class="main__courses courses">
+            <div class="courses__container">
+               <div class="courses__header-block">
+                  <div class="courses__title-block">
+                     <h2 class="courses__title title">Ready to learn?</h2>
+                     <h3 class="courses__subtitle subtitle">Featured Courses</h3>
                   </div>
-                  <div class="card__employment-type card__employment-type--turquoise">Marketing</div>
-                  <div class="card__description">
-                     The Ultimate Google Ads Training Course
+                  <div class="courses__button-block">
+                     <a href="#logo" title="До гори, до logo" class="courses__button button">More about us</a>
                   </div>
-                  <div class="card-content-price">
-                     <div class="card__price">$100</div>
-                     <div class="card__name">by Leslie Alexander Li</div>
-                  </div>
-               </a>
-               <a class="courses__card card" href="">
-                  <div class="card__image">
-                     <img src="img/courses/image-02.jpg" alt="curator">
-                  </div>
-                  <div class="card__employment-type card__employment-type--blue">Management</div>
-                  <div class="card__description">
-                     Prduct Management Fundamentals
-                  </div>
-                  <div class="card-content-price">
-                     <div class="card__price">$480</div>
-                     <div class="card__name">by Marvin McKinney</div>
-                  </div>
-               </a>
-               <a class="courses__card card" href="">
-                  <div class="card__image">
-                     <img src="img/courses/image-03.jpg" alt="curator">
-                  </div>
-                  <div class="card__employment-type card__employment-type--orange">HR & Recruting</div>
-                  <div class="card__description">
-                     HR Management and Analytics
-                  </div>
-                  <div class="card-content-price">
-                     <div class="card__price">$200</div>
-                     <div class="card__name">by Leslie Alexander Li</div>
-                  </div>
-               </a>
-               <a class="courses__card card" href="">
-                  <div class="card__image">
-                     <img src="img/courses/image-04.jpg" alt="curator">
-                  </div>
-                  <div class="card__employment-type card__employment-type--turquoise">Marketing</div>
-                  <div class="card__description">
-                     Brand Management & PR Communications
-                  </div>
-                  <div class="card-content-price">
-                     <div class="card__price">$530</div>
-                     <div class="card__name">by Kristin Watson</div>
-                  </div>
-               </a>
-               <a class="courses__card card" href="">
-                  <div class="card__image">
-                     <img src="img/courses/image-05.jpg" alt="curator">
-                  </div>
-                  <div class="card__employment-type card__employment-type--blue">Management</div>
-                  <div class="card__description">
-                     Business Development Management
-                  </div>
-                  <div class="card-content-price">
-                     <div class="card__price">$400</div>
-                     <div class="card__name">
-                        by Dianne Russell
+               </div>
+               <div class="courses__body">
+                  <a class="courses__card card" href="">
+                     <div class="card__image">
+                        <img src="img/courses/image-01.jpg" alt="curator">
                      </div>
+                     <div class="card__employment-type card__employment-type--turquoise">Marketing</div>
+                     <div class="card__description">
+                        The Ultimate Google Ads Training Course
+                     </div>
+                     <div class="card-content-price">
+                        <div class="card__price">$100</div>
+                        <div class="card__name">by Leslie Alexander Li</div>
+                     </div>
+                  </a>
+                  <a class="courses__card card" href="">
+                     <div class="card__image">
+                        <img src="img/courses/image-02.jpg" alt="curator">
+                     </div>
+                     <div class="card__employment-type card__employment-type--blue">Management</div>
+                     <div class="card__description">
+                        Prduct Management Fundamentals
+                     </div>
+                     <div class="card-content-price">
+                        <div class="card__price">$480</div>
+                        <div class="card__name">by Marvin McKinney</div>
+                     </div>
+                  </a>
+                  <a class="courses__card card" href="">
+                     <div class="card__image">
+                        <img src="img/courses/image-03.jpg" alt="curator">
+                     </div>
+                     <div class="card__employment-type card__employment-type--orange">HR & Recruting</div>
+                     <div class="card__description">
+                        HR Management and Analytics
+                     </div>
+                     <div class="card-content-price">
+                        <div class="card__price">$200</div>
+                        <div class="card__name">by Leslie Alexander Li</div>
+                     </div>
+                  </a>
+                  <a class="courses__card card" href="">
+                     <div class="card__image">
+                        <img src="img/courses/image-04.jpg" alt="curator">
+                     </div>
+                     <div class="card__employment-type card__employment-type--turquoise">Marketing</div>
+                     <div class="card__description">
+                        Brand Management & PR Communications
+                     </div>
+                     <div class="card-content-price">
+                        <div class="card__price">$530</div>
+                        <div class="card__name">by Kristin Watson</div>
+                     </div>
+                  </a>
+                  <a class="courses__card card" href="">
+                     <div class="card__image">
+                        <img src="img/courses/image-05.jpg" alt="curator">
+                     </div>
+                     <div class="card__employment-type card__employment-type--blue">Management</div>
+                     <div class="card__description">
+                        Business Development Management
+                     </div>
+                     <div class="card-content-price">
+                        <div class="card__price">$400</div>
+                        <div class="card__name">
+                           by Dianne Russell
+                        </div>
+                     </div>
+                  </a>
+                  <a class="courses__card card" href="">
+                     <div class="card__image">
+                        <img src="img/courses/image-06.jpg" alt="curator">
+                     </div>
+                     <div class="card__employment-type card__employment-type--red">Design</div>
+                     <div class="card__description">
+                        Graphic Design Basic
+                     </div>
+                     <div class="card-content-price">
+                        <div class="card__price">$500</div>
+                        <div class="card__name">by Guy Hawkins</div>
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div id="statistic" class="main__statistic statistic">
+            <div class="statistic__body">
+               <h2 class="statistic__title">HR statistics: job search, interviews, hiring and recruiting</h2>
+               <div class="statistic__image">
+                  <img src="img/statistic/image.jpg" alt="keyboard and sunglasses">
+               </div>
+               <div class="statistic__body-text text">
+                  <div class="text__bold">
+                     Vulputate vitae pellentesque scelerisque luctus consequat mattis pellentesque dui odio. Interdum aenean sit malesuada ornare sed gravida rhoncus, congue. Purus auctor nullam diam quis est hendrerit ac euismod.
                   </div>
+                  <div class="text__regular">
+                     <p>At facilisi sapien posuere eget nunc senectus proin nullam. Tortor senectus in et sagittis, vitae diam cras dignissim. Varius adipiscing eget diam nisi. Orci, consectetur vulputate metus ornare pharetra, neque, fermentum. Vel nec rhoncus, non nunc, neque in massa. Feugiat leo nam nisl lacinia amet, odio. Mi varius viverra risus vel.</p>
+                     <p>Amet, morbi sed pharetra, elit eget mi potenti. Condimentum orci interdum feugiat lectus libero duis. Nisl massa, elementum varius sit. Nunc felis, porttitor aliquam urna, accumsan et sed. Aliquet non sed duis diam vehicula rhoncus. In dictum nullam tincidunt semper pellentesque purus morbi sed. Ut aliquet velit pharetra, nisi nunc, non.</p>
+                  </div>
+                  <div class="text__quote">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in tot euismod vulputate etiam eros. Vel accumsan at elit neque, ipsum.
+                  </div>
+                  <p>Mauris amet arcu nisl vel dictum tellus. Sed rhoncus, ut sed id ut erat mattis. Vitae mus blandit in neque amet non fringilla blandit:</p>
+                  <ul class="text__list list">
+                     <li class="list__item">A fermentum in morbi pretium aliquam adipiscing donec tempus.</li>
+                     <li class="list__item">Vulputate placerat amet pulvinar lorem nisl.</li>
+                     <li class="list__item">Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
+                     <li class="list__item">Etiam duis lobortis in fames ultrices commodo nibh.</li>
+                  </ul>
+                  <p>Enim, vel massa odio diam. Blandit massa gravida feugiat elementum id nec sed leo. Nisi in ornare lectus eget. Urna, risus, consectetur volutpat lorem purus. Velit aliquet nibh vitae maecenas. Consectetur neque ut aliquam eros, purus enim dignissim aenean vitae. Ultrices fames augue mattis tortor est justo, pharetra nibh risus. Facilisi at porttitor volutpat natoque proin amet, nulla. Vivamus ut lobortis sagittis curabitur tellus convallis eget netus vitae.</p>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="footer">
+         <div class="footer__container">
+            <div class="footer__social">
+               <a class="footer__social-image" href="">
+                  <img src="img/socials/faceboock-red.svg" alt="Faceboock">
                </a>
-               <a class="courses__card card" href="">
-                  <div class="card__image">
-                     <img src="img/courses/image-06.jpg" alt="curator">
-                  </div>
-                  <div class="card__employment-type card__employment-type--red">Design</div>
-                  <div class="card__description">
-                     Graphic Design Basic
-                  </div>
-                  <div class="card-content-price">
-                     <div class="card__price">$500</div>
-                     <div class="card__name">by Guy Hawkins</div>
-                  </div>
+               <a class="footer__social-image" href="">
+                  <img src="img/socials/twitter-red.svg" alt="Twitter">
+               </a>
+               <a class="footer__social-image" href="">
+                  <img src="img/socials/in-red.svg" alt="In">
+               </a>
+               <a class="footer__social-image" href="">
+                  <img src="img/socials/be-red.svg" alt="Be">
                </a>
             </div>
+            <div class="footer__text">Some footer text</div>
          </div>
-      </div>
-      <div class="main__statistic statistic">
-         <div class="statistic__container">
-            <h2 class="statistic__title">HR statistics: job search, interviews, hiring and recruiting</h2>
-            <div class="statistic__image">
-               <img src="img/statistic/image.jpg" alt="keyboard and sunglasses">
-            </div>
-            <div class="statistic__body-text text">
-               <div class="text__bold">
-                  Vulputate vitae pellentesque scelerisque luctus consequat mattis pellentesque dui odio. Interdum aenean sit malesuada ornare sed gravida rhoncus, congue. Purus auctor nullam diam quis est hendrerit ac euismod.
-               </div>
-               <div class="text__regular">
-                  <p>At facilisi sapien posuere eget nunc senectus proin nullam. Tortor senectus in et sagittis, vitae diam cras dignissim. Varius adipiscing eget diam nisi. Orci, consectetur vulputate metus ornare pharetra, neque, fermentum. Vel nec rhoncus, non nunc, neque in massa. Feugiat leo nam nisl lacinia amet, odio. Mi varius viverra risus vel.</p>
-                  <p>Amet, morbi sed pharetra, elit eget mi potenti. Condimentum orci interdum feugiat lectus libero duis. Nisl massa, elementum varius sit. Nunc felis, porttitor aliquam urna, accumsan et sed. Aliquet non sed duis diam vehicula rhoncus. In dictum nullam tincidunt semper pellentesque purus morbi sed. Ut aliquet velit pharetra, nisi nunc, non.</p>
-               </div>
-               <div class="text__quote">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in tot euismod vulputate etiam eros. Vel accumsan at elit neque, ipsum.
-               </div>
-               <p>Mauris amet arcu nisl vel dictum tellus. Sed rhoncus, ut sed id ut erat mattis. Vitae mus blandit in neque amet non fringilla blandit:</p>
-               <ul class="text__list">
-                  <li class="text__item">A fermentum in morbi pretium aliquam adipiscing donec tempus.</li>
-                  <li class="text__item">Vulputate placerat amet pulvinar lorem nisl.</li>
-                  <li class="text__item">Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
-                  <li class="text__item">Etiam duis lobortis in fames ultrices commodo nibh.</li>
-               </ul>
-               <p>Enim, vel massa odio diam. Blandit massa gravida feugiat elementum id nec sed leo. Nisi in ornare lectus eget. Urna, risus, consectetur volutpat lorem purus. Velit aliquet nibh vitae maecenas. Consectetur neque ut aliquam eros, purus enim dignissim aenean vitae. Ultrices fames augue mattis tortor est justo, pharetra nibh risus. Facilisi at porttitor volutpat natoque proin amet, nulla. Vivamus ut lobortis sagittis curabitur tellus convallis eget netus vitae.</p>
-            </div>
-         </div>
-      </div>
-   </main>
-   <footer class="footer">
-      <div class="footer__content">
-         <div class="footer__social">
-            <div class="footer__social-image">
-               <img src="@img" alt="">
-            </div>
-            <div class="footer__social-image">
-               <img src="@img" alt="">
-            </div>
-            <div class="footer__social-image">
-               <img src="@img" alt="">
-            </div>
-         </div>
-         <div class="footer__rights">Some text</div>
-      </div>
-   </footer>
+      </footer>
+   </div>
 </body>
 
 </html>
