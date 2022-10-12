@@ -180,6 +180,9 @@ ul:hover {
 .main__courses:target {
    display: block;
 }
+.courses__header-block {
+   margin-bottom: 60px;
+}
 .courses__title-block {
    display: inline-block;
    margin-right: 54.5%;
