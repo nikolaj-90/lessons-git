@@ -100,7 +100,7 @@ ul:hover {
 .header__item:active {
    color: #5a87fc;
 }
-.header__item > a:visited {
+.header__link:visited {
    color: #1e212c;
 }
 .header__item:not(:last-child) {
