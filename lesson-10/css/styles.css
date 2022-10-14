@@ -20,15 +20,6 @@ body {
 .main {
    padding: 30px 0px;
 }
-.who-we-are {
-   padding: 80px 0px 100px 0px;
-}
-.courses {
-   padding-bottom: 60px;
-}
-.statistic {
-   padding-bottom: 80px;
-}
 /* ======================== Titles Subtitles ====================== */
 .title {
    font-weight: 700;
@@ -119,10 +110,11 @@ ul:hover {
    font-family: "Montserrat", sans-serif;
 }
 /* ============================= Who we are =================================== */
-.main__who-we-are {
+.who-we-are {
    display: none;
+   padding: 80px 0px 100px 0px;
 }
-.main__who-we-are:target {
+.who-we-are:target {
    display: block;
 }
 .who-we-are__container {
@@ -149,6 +141,7 @@ ul:hover {
 }
 .list__item {
    line-height: 1.6;
+   min-height: 16px;
 }
 .list__item::before {
    content: "";
@@ -174,10 +167,12 @@ ul:hover {
    background: rgb(247, 112, 2);
 }
 /* ========================== Main courses ========================== */
-.main__courses {
+
+.courses {
    display: none;
+   padding-bottom: 60px;
 }
-.main__courses:target {
+.courses:target {
    display: block;
 }
 .courses__header-block {
@@ -267,10 +262,11 @@ ul:hover {
    background-color: #f52f6e;
 }
 /* ========================== Statistic ========================== */
-.main__statistic {
+.statistic {
    display: none;
+   padding-bottom: 80px;
 }
-.main__statistic:target {
+.statistic:target {
    display: block;
 }
 .statistic__body {
