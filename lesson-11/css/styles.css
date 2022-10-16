@@ -1,0 +1,365 @@
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+   position: relative;
+}
+[class*="__container"] {
+   max-width: 1100px;
+   margin: 0 auto;
+}
+/* ======================== Header block ============================ */
+.header {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 20px 0px;
+   z-index: 50;
+}
+.header__container {
+}
+.header__menu {
+}
+.menu {
+   color: wheat;
+   text-align: center;
+}
+.menu__item {
+   display: inline-block;
+   position: relative;
+   font-size: 25px;
+   font-family: sans-serif;
+   font-weight: 700;
+   text-transform: capitalize;
+   letter-spacing: 2px;
+}
+.menu__item:hover .menu__sublist {
+   opacity: 1;
+   visibility: visible;
+   top: 100%;
+}
+.menu__item:not(:last-child) {
+   margin-right: 50px;
+}
+.menu__link {
+   line-height: 2;
+}
+.menu__link:hover {
+   color: rgb(252, 151, 0);
+}
+.menu__sublist {
+   position: absolute;
+   top: 150%;
+   left: 0;
+   width: 120px;
+   background: #999;
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 2;
+   transition: all 0.5s ease 0s;
+   opacity: 0;
+   visibility: hidden;
+}
+
+.header__menu .menu__item:hover .menu__sublist,
+.menu__sublist .sublist__item:hover .sublist__sub-sublist,
+.menu__sublist:hover,
+.sublist__sub-sublist:hover {
+   display: block;
+   overflow: visible;
+}
+
+.sublist {
+}
+.sublist__item {
+   position: relative;
+   background: rgba(51, 51, 51, 0);
+   transition: all 0.3s;
+}
+.sublist__item:hover {
+   background: #333;
+}
+.sublist__link {
+}
+.sublist__sub-sublist {
+   display: none;
+   position: absolute;
+   top: 0;
+   left: 100%;
+   background: green;
+   width: 150px;
+}
+.sub-sublist__item {
+   transition: all 0.3s;
+}
+.sub-sublist__item:hover {
+   background: rgb(0, 255, 0);
+   color: #333;
+}
+.sub-sublist__link {
+}
+/* ======================= Practice block =========================== */
+.practice {
+   background: linear-gradient(to bottom, #1e5799 0%, #207cca 54%, #2989d8 71%, #f7eb85 100%);
+   padding: 100px 0px 50px 0px;
+}
+.practice__body {
+   border-radius: 15%;
+   overflow: hidden;
+}
+.practice__car {
+   position: relative;
+   background: url("../img/beach.jpg") 0 100% / cover no-repeat;
+   width: 1100px;
+   height: 900px;
+   overflow: hidden;
+}
+.car__img {
+   position: absolute;
+   width: 100px;
+   opacity: 0;
+   visibility: hidden;
+}
+.practice__car:hover .car__img {
+   visibility: visible;
+   opacity: 1;
+}
+.car__img:nth-child(1) {
+   left: -20%;
+   top: 25%;
+   z-index: 1;
+   transition: all 0.8s;
+}
+.practice__car:hover .car__img:nth-child(1) {
+   left: 10%;
+   top: 49.9%;
+}
+.car__img:nth-child(2) {
+   left: 28.6%;
+   top: -20%;
+   transition: all 0.8s;
+}
+.practice__car:hover .car__img:nth-child(2) {
+   left: 28.5%;
+   top: 49.9%;
+}
+
+.car__img:nth-child(3) {
+   left: 100%;
+   top: 25%;
+   transition: all 0.8s;
+}
+.practice__car:hover .car__img:nth-child(3) {
+   left: 47%;
+   top: 49.9%;
+}
+
+.car__img:nth-child(4) {
+   left: -20%;
+   top: 0;
+   transition: all 0.8s;
+}
+.practice__car:hover .car__img:nth-child(4) {
+   left: 10%;
+   top: 64%;
+}
+.car__img:nth-child(5) {
+   left: 95%;
+   top: -25%;
+   transition: all 1.5s;
+}
+.practice__car:hover .car__img:nth-child(5) {
+   left: 28.6%;
+   top: 64%;
+}
+.car__img:nth-child(6) {
+   left: 125%;
+   top: 64%;
+   transition: all 0.5s;
+}
+.practice__car:hover .car__img:nth-child(6) {
+   left: 47.2%;
+   top: 64%;
+}
+.car__img:nth-child(7) {
+   left: 45%;
+   top: -25%;
+   transition: all 0.6s;
+}
+.practice__car:hover .car__img:nth-child(7) {
+   left: 65.6%;
+   top: 64%;
+}
+.car__img:nth-child(8) {
+   left: 125%;
+   top: 14%;
+   transition: all 0.9s;
+}
+.practice__car:hover .car__img:nth-child(8) {
+   left: 84%;
+   top: 64%;
+   transition: all 0.5s;
+}
+.car__img:nth-child(9) {
+   right: -25%;
+   bottom: -50%;
+   transition: all 0.9s;
+   z-index: 1;
+}
+.practice__car:hover .car__img:nth-child(9) {
+   right: 80.9%;
+   bottom: 7.9%;
+}
+.car__img:nth-child(10) {
+   right: 125%;
+   bottom: 0%;
+   transition: all 0.7s;
+}
+.practice__car:hover .car__img:nth-child(10) {
+   right: 62.3%;
+   bottom: 7.9%;
+}
+.car__img:nth-child(11) {
+   right: 98%;
+   bottom: 100%;
+   transition: all 0.9s;
+}
+.practice__car:hover .car__img:nth-child(11) {
+   right: 43.7%;
+   bottom: 7.9%;
+}
+.car__img:nth-child(12) {
+   right: -15%;
+   bottom: -25%;
+   transition: all 0.6s;
+   z-index: 1;
+}
+.practice__car:hover .car__img:nth-child(12) {
+   right: 25.2%;
+   bottom: 7.9%;
+}
+.car__img:nth-child(13) {
+   right: 50%;
+   bottom: 100%;
+   transition: all 0.7s;
+}
+.practice__car:hover .car__img:nth-child(13) {
+   right: 6.9%;
+   bottom: 7.9%;
+}
+.car__img:nth-child(14) {
+   right: 40%;
+   bottom: -25%;
+   transition: all 0.9s;
+   z-index: 1;
+}
+.practice__car:hover .car__img:nth-child(14) {
+   right: 81%;
+   bottom: -6.1%;
+}
+.car__img:nth-child(15) {
+   right: 85%;
+   bottom: -25%;
+   transition: all 0.7s;
+}
+.practice__car:hover .car__img:nth-child(15) {
+   right: 62.3%;
+   bottom: -6.1%;
+}
+.car__img:nth-child(16) {
+   right: 120%;
+   bottom: 12%;
+   transition: all 0.8s;
+}
+.practice__car:hover .car__img:nth-child(16) {
+   right: 43.6%;
+   bottom: -6.1%;
+}
+.car__img:nth-child(17) {
+   right: 0%;
+   bottom: -15%;
+   transition: all 0.8s;
+}
+.practice__car:hover .car__img:nth-child(17) {
+   right: 25.1%;
+   bottom: -6.1%;
+}
+.car__img:nth-child(18) {
+   right: 27%;
+   bottom: -20%;
+   transition: all 0.8s;
+}
+.practice__car:hover .car__img:nth-child(18) {
+   right: 7%;
+   bottom: -6.1%;
+}
+.car__img--plain {
+   width: 120px;
+   position: absolute;
+   top: 50%;
+   left: 110%;
+   opacity: 1;
+}
+.car__img--plain img {
+   width: 100%;
+}
+.practice__car:hover .car__img--plain {
+   top: -20%;
+   left: 0%;
+   transition: all 10s 0.2s;
+}
+/* ============================== Stiky block ============================ */
+.stiky {
+   position: relative;
+   padding: 50px 0px 100px 0px;
+   background: linear-gradient(135deg, rgba(254,252,234,1) 0%,rgba(241,218,54,1) 100%);
+}
+.stiky__container {
+}
+.stiky__body {
+   height: 500px;
+   overflow: auto;
+}
+.stiky__text-block--orange .stiky__title {
+   background: orange;
+}
+.stiky__text-block--orange {
+   background: linear-gradient(to bottom, #1e5799 0%,#2989d8 34%,#f7c485 100%);
+}
+.stiky__title {
+   position: sticky;
+   top: 0;
+   left: 0;
+   font-size: 40px;
+   text-transform: uppercase;
+   text-align: center;
+   padding: 20px 10px;
+}
+.stiky__text-block--blue .stiky__title {
+   background: rgb(65, 65, 236);
+}
+.stiky__text-block--blue{
+   background: linear-gradient(to bottom, #f2f200 1%,#547ddd 54%,#6b6cbf 100%);
+}
+.stiky__text-block--yellow .stiky__title {
+   background: yellow;
+}
+.stiky__text-block--yellow {
+   background: radial-gradient(ellipse at center, #f2f200 1%,#547ddd 41%,#6b6cbf 100%);
+}
+.stiky__text-block--yellow p:last-child {
+   padding-bottom: 100px;
+}
+.stiky__text-block:not(:last-child) {
+   padding-bottom: 45px;
+}
+.stiky__text-block p {
+   font-size: 16px;
+   line-height: 1.2;
+}
+.stiky__text-block p:nth-of-type(1) {
+   padding-top: 40px;
+}
+.stiky__text-block p:not(:last-child) {
+   padding-bottom: 30px;
+}
