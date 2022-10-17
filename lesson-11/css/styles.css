@@ -84,15 +84,16 @@ body {
    position: absolute;
    top: 0;
    left: 100%;
-   background: rgba(0, 128, 0, 0.623);
+   background: rgba(3, 245, 225, 0.39);
+   color: #333;
    width: 250px;
 }
 .sublist-sub__item {
    transition: all 0.3s;
 }
 .sublist-sub__item:hover {
-   background: rgb(0, 255, 0);
-   color: #333;
+   background: rgba(0, 60, 255, 0.596);
+   color: wheat;
 }
 /* ======================= Practice block =========================== */
 .practice {
