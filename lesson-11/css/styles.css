@@ -309,7 +309,8 @@ body {
 .stiky {
    position: relative;
    padding: 50px 0px 100px 0px;
-   background: linear-gradient(135deg, rgba(254,252,234,1) 0%,rgba(241,218,54,1) 100%);
+   /* background: linear-gradient(135deg, rgba(254,252,234,1) 0%,rgba(241,218,54,1) 100%); */
+   background: linear-gradient(to bottom, #f7eb85 0%, #2989d8 54%, #207cca 71%, #1e5799 100%);
    font-family: inherit;
 }
 .stiky__body {
