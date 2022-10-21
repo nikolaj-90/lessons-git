@@ -43,6 +43,10 @@ button {
 	color: inherit;
 	background: inherit;
 }
+html,
+body {
+   height: 100%;
+}
 body {
 	line-height: 1;
 }
