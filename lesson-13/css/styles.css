@@ -298,14 +298,16 @@
    }
 }
 .space__rocket {
-   top: 37%;
-   left: 65%;
+   top: 39%;
+   left: 60%;
    transform: rotate3d(1, 0, 2, -91deg) scale(1.5);
    animation: roket 3s ease 1s 1;
    opacity: 1;
+   visibility: hidden;
 }
 @keyframes roket {
    0% {
+      visibility: visible;
 }
    80% {
       top: 15%;
@@ -323,12 +325,14 @@
 .space__ufo-2 {
    bottom: -100%;
    right: -60%;
+   visibility: hidden;
    transform: rotate3d(0, 1, 0, 50deg) scale(15);
    animation: ufo-2 15s ease 11s 1;
    z-index: 2;
 }
 @keyframes ufo-2 {
    0% {
+      visibility: visible;
    }
    100% {
       bottom: 80%;
