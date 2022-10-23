@@ -191,38 +191,29 @@
 }
 @keyframes ufo {
    0% {
-      /* left: 90%;
-      opacity: 1; */
    }
    30% {
       top: 10%;
       left: 60%;
-      opacity: 1;
       transform: scale(1);
    }
    35% {
       top: 10%;
       left: 60%;
-      opacity: 1;
-      transform: scale(1);
    }
    55% {
       left: 10%;
       top: 0;
-      opacity: 1;
-      transform: scale(1);
    }
    60% {
       left: 10%;
       top: 0;
-      opacity: 1;
       transform: scale(1);
    }
 
    100% {
       top: -20%;
       left: -20%;
-      opacity: 1;
       transform: scale(0);
    }
 }
@@ -236,7 +227,7 @@
 }
 @keyframes pukin {
    0% {
-      }
+   }
    10% {
       left: 64%;
       top: 31%;
@@ -280,7 +271,7 @@
 }
 @keyframes alien {
    0% {
- }
+   }
    15% {
       transform: scale(1) rotateY(180deg);
    }
@@ -308,7 +299,7 @@
 @keyframes roket {
    0% {
       visibility: visible;
-}
+   }
    80% {
       top: 15%;
       left: 34%;
@@ -327,7 +318,7 @@
    right: -60%;
    visibility: hidden;
    transform: rotate3d(0, 1, 0, 50deg) scale(15);
-   animation: ufo-2 15s ease 11s 1;
+   animation: ufo-2 15s ease 11s 1 forwards;
    z-index: 2;
 }
 @keyframes ufo-2 {
