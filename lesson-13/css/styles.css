@@ -93,7 +93,7 @@
    top: 25%;
    left: 38%;
    transform: scale(1);
-   animation: moon 120s ease 4s 1 forwards, moon-rotade 20s linear infinite;
+   animation: moon 120s ease 5s 1 forwards, moon-rotade 20s linear infinite;
 }
 @keyframes moon {
    0% {
@@ -290,16 +290,15 @@
    top: 39%;
    left: 60%;
    transform: rotate3d(1, 0, 2, -91deg) scale(1.5);
-   animation: roket 3s ease 1s 1 forwards;
-   opacity: 1;
+   animation: roket 4s ease 1s 1 forwards;
    visibility: hidden;
 }
 @keyframes roket {
    0% {
       visibility: visible;
    }
-   80% {
-      top: 15%;
+   85% {
+      top: 14%;
       left: 34%;
       transform: rotate3d(1, 0, 2, -91deg) scale(0.1);
       opacity: 1;
@@ -307,8 +306,7 @@
    100% {
       top: 14%;
       left: 33%;
-      transform: rotate3d(1, 0, 2, -91deg) scale(0.1);
-      opacity: 0;
+      transform: rotate3d(1, 0, 2, -91deg) scale(0);
    }
 }
 .space__ufo-2 {
