@@ -188,6 +188,7 @@
    transform: rotateY(1deg);
    animation: ufo 7s ease 1 normal 5s;
    transform: scale(0);
+   z-index: 3;
 }
 @keyframes ufo {
    0% {
@@ -312,18 +313,21 @@
 .space__ufo-2 {
    bottom: -100%;
    right: -60%;
-   visibility: hidden;
+   opacity: 0;
    transform: rotate3d(0, 1, 0, 50deg) scale(15);
    animation: ufo-2 15s ease 11s 1 forwards;
-   z-index: 2;
+   z-index: 3;
 }
 @keyframes ufo-2 {
    0% {
-      visibility: visible;
+   }
+   10% {
+      opacity: 1;
    }
    100% {
       bottom: 80%;
       right: 70%;
       transform: rotate3d(0, 1, 0, 67deg) scale(0);
+      opacity: 1;
    }
 }
