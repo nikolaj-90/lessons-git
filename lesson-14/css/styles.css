@@ -1,0 +1,239 @@
+/* ==================================== Fonts ================================ */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+/* 
+font-family: "Ubuntu";
+font-weight: 400/700;
+*/
+body {
+   font-family: "Ubuntu";
+}
+[class*="__container"] {
+   max-width: 800px;
+   margin: 20px auto 0;
+}
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+   position: relative;
+   color: rgb(7, 7, 15);
+   min-height: 100%;
+}
+/* ============================== Header ==================== */
+.header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 10px 0px;
+   letter-spacing: 30px;
+   text-transform: uppercase;
+   text-align: center;
+   font-size: 30px;
+   font-weight: 700;
+   z-index: 50;
+}
+.logo {
+   color: #000;
+   background: linear-gradient(
+      45deg,
+      rgba(249, 149, 49, 1) 10%,
+      rgba(249, 149, 49, 1) 10%,
+      rgba(41, 137, 216, 1) 27%,
+      rgba(244, 69, 46, 1) 56%,
+      rgba(46, 242, 114, 1) 79%,
+      rgba(125, 185, 232, 1) 100%
+   );
+   -webkit-background-clip: text;
+   -webkit-background: text;
+   -webkit-text-stroke: 4px transparent;
+   background-size: 400%;
+   animation: color-text 12s ease-in-out infinite alternate backwards;
+}
+@keyframes color-text {
+   0% {
+      background-position: 0 0;
+   }
+   100% {
+      background-position: 100% 0;
+   }
+}
+/* ============================ Main =========================== */
+.main {
+   flex: 1 0 auto;
+   padding-top: 70px;
+   background: url("../img/nebula.png") 0 0 / cover, #000;
+}
+/* ============================ Cards =========================== */
+.cards {
+}
+.cards__content {
+}
+.cards__item {
+}
+.item {
+   position: relative;
+   width: 300px;
+   height: 250px;
+   perspective: 600px;
+}
+.item__front,
+.item__back,
+.item__middle {
+   transform-style: preserve-3d;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   border-radius: 10%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: all 2s linear;
+   backface-visibility: hidden;
+}
+.item__front {
+   background: green;
+   transform: rotateY(0deg);
+}
+.item__back {
+   background: blue;
+   transform: rotateY(180deg);
+}
+.item:hover .item__front {
+   transform: rotateY(-180deg);
+}
+.title {
+   color: #fff;
+   font-size: 35px;
+   transform: translateZ(50px);
+}
+.item:hover .item__back {
+   transform: rotateY(0deg);
+}
+.title-back {
+   color: #fff;
+   font-size: 30px;
+}
+/* ============================ Footer ============================ */
+.footer {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+   font-weight: 700;
+   padding: 20px 0px;
+   gap: 20px 50px;
+   font-size: 25px;
+   background: #000;
+   z-index: 1;
+}
+.footer__letter {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #fff;
+   width: 50px;
+   height: 50px;
+   border-radius: 15%;
+   background: #000;
+}
+.footer__letter--one::before,
+.footer__letter--one::after {
+   background: linear-gradient(
+      135deg,
+      rgba(249, 149, 49, 1) 10%,
+      rgba(249, 149, 49, 1) 10%,
+      rgba(41, 137, 216, 1) 27%,
+      rgba(244, 69, 46, 1) 56%,
+      rgba(46, 242, 114, 1) 79%,
+      rgba(125, 185, 232, 1) 100%
+   );
+}
+.footer__letter--two::before,
+.footer__letter--two::after {
+   background: linear-gradient(
+      135deg,
+      rgba(252, 234, 187, 1) 0%,
+      rgba(143, 226, 70, 1) 20%,
+      rgba(0, 163, 244, 1) 63%,
+      rgba(251, 223, 147, 1) 100%
+   );
+}
+.footer__letter--three::before,
+.footer__letter--three::after {
+   background: linear-gradient(
+      135deg,
+      rgba(30, 87, 153, 0) 0%,
+      rgba(30, 87, 153, 0.8) 15%,
+      rgba(30, 87, 153, 1) 19%,
+      rgba(30, 87, 153, 1) 20%,
+      rgba(41, 137, 216, 1) 50%,
+      rgba(86, 57, 170, 1) 81%,
+      rgba(92, 47, 164, 0.8) 85%,
+      rgba(101, 31, 155, 0.48) 91%,
+      rgba(101, 31, 155, 0) 100%
+   );
+}
+.footer__letter--four::before,
+.footer__letter--four::after {
+   background: linear-gradient(
+      135deg,
+      rgba(47, 237, 221, 0.87) 0%,
+      rgba(47, 237, 221, 0.84) 6%,
+      rgba(44, 190, 219, 0.8) 15%,
+      rgba(43, 169, 218, 1) 19%,
+      rgba(41, 137, 216, 1) 25%,
+      rgba(47, 239, 127, 1) 53%,
+      rgba(80, 112, 144, 1) 81%,
+      rgba(85, 94, 146, 0.8) 85%,
+      rgba(101, 31, 155, 0.97) 99%,
+      rgba(101, 31, 155, 0.98) 100%
+   );
+}
+.footer__letter--five::before,
+.footer__letter--five::after {
+   background: linear-gradient(
+      135deg,
+      rgba(252, 129, 63, 1) 0%,
+      rgba(221, 201, 46, 1) 22%,
+      rgba(7, 242, 124, 1) 67%,
+      rgba(251, 149, 94, 1) 100%
+   );
+}
+.footer__letter--six::before,
+.footer__letter--six::after {
+   background: linear-gradient(
+      135deg,
+      rgba(242, 97, 75, 1) 1%,
+      rgba(148, 42, 234, 1) 21%,
+      rgba(234, 40, 3, 1) 61%,
+      rgba(255, 102, 0, 1) 75%,
+      rgba(157, 74, 196, 1) 100%
+   );
+}
+.footer__letter::before,
+.footer__letter::after {
+   content: "";
+   position: absolute;
+   top: -2%;
+   left: -2%;
+   width: calc(100% + 2px);
+   height: calc(100% + 2px);
+   border-radius: 15%;
+   -webkit-background-size: 700%;
+   animation: color-border 3s linear infinite alternate;
+   z-index: -1;
+}
+@keyframes color-border {
+   0% {
+      background-position: 0 0;
+   }
+   100% {
+      background-position: 100% 0;
+   }
+}
+.footer__letter::before {
+   filter: blur(7px);
+}
