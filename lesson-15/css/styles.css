@@ -141,6 +141,8 @@ body {
 }
 @keyframes puls-play {
    0% {
+      transform: scale(1);
+      opacity: 1;
    }
    100% {
       transform: scale(2);

@@ -76,6 +76,7 @@ body {
 }
 @keyframes spin-button-text {
    0% {
+      transform: translateY(0) scale(1);
    }
    49% {
       transform: translateY(170%) scale(0.8);
@@ -86,11 +87,10 @@ body {
    }
    51% {
       transform: translateY(-170%) scale(0.8);
-      /* visibility: visible; */
       opacity: 1;
    }
    100% {
-      ransform: translateY(0) scale(1);
+      transform: translateY(0) scale(1);
    }
 }
 
