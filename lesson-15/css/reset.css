@@ -38,6 +38,9 @@ textarea {
 	font-family: inherit;
 	font-size: inherit;
 }
+input {
+   width: 100%;
+}
 button {
 	cursor: pointer;
 	color: inherit;

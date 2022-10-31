@@ -31,6 +31,7 @@ h5,
 h6 {
    font-weight: inherit;
    font-size: inherit;
+   font-weight: inherit;
 }
 input,
 button,
@@ -42,6 +43,9 @@ button {
 	cursor: pointer;
 	color: inherit;
 	background: inherit;
+}
+input {
+   width: 100%;
 }
 html,
 body {

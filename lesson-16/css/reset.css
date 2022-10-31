@@ -37,11 +37,15 @@ button,
 textarea {
 	font-family: inherit;
 	font-size: inherit;
+   font-weight: inherit;
 }
 button {
 	cursor: pointer;
 	color: inherit;
 	background: inherit;
+}
+input {
+   width: 100%;
 }
 html,
 body {
