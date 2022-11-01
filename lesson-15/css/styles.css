@@ -164,7 +164,9 @@ body {
 
 .advantages-main {
    display: flex;
-   gap: 66px;
+   /* gap: 66px; */
+   gap: 10px;
+   justify-content: space-between;
    align-items: center;
    color: #1e212c;
 }
