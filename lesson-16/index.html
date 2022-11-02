@@ -1,16 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/fonts.css">
    <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/common.css">
    <link rel="stylesheet" href="css/styles.css">
    <title>lesson-16</title>
 </head>
+
 <body>
-   <header class="header"></header>
-   <main class="main"></main>
-   <footer class="footer"></footer>
+   <div class="wrapper">
+      <header class="header"></header>
+      <main class="page">
+         <section class="page__feedback feedback">
+            <div class="feedback__container">
+               <div class="feedback__content">
+                  <div class="feedback__image">
+                     <img src="img/feedback/illustration.svg" alt="illustration">
+                  </div>
+                  <div class="feedback__body body-feedback">
+                     <div class="body-feedback__title title-container">
+                        <h2 class="body-feedback__title title">Any questions?</h2>
+                        <div class="body-feedback__label label">Drop us a line</div>
+                     </div>
+                     <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="body-feedback__form form">
+                        <div class="form__row">
+                           <div class="form__line">
+                              <label for="fname" class="form__label">First Name*</label>
+                              <input id="fname" class="form__input form__input--first-name" type="text" name="first-name" required placeholder="Your first name" autocomplete="off">
+                           </div>
+                           <div class="form__line">
+                              <label for="lname" class="form__label">Last Name*</label>
+                              <input id="lname" class="form__input form__input--last-name" type="text" name="last-name" required placeholder="Your last name" autocomplete="off">
+                           </div>
+                        </div>
+                        <div class="form__row">
+                           <div class="form__line">
+                              <label for="email"  class="form__label">Email*</label>
+                              <input id="email" class="form__input form__input--email" type="email" name="mail" required placeholder="Your working email" autocomplete="off">
+                           </div>
+                           <div class="form__line">
+                              <label for="tel" class="form__label">Phone</label>
+                              <input id="tel" class="form__input form__input--phone" type="tel" name="phone" placeholder="Your phone number">
+                           </div>
+                        </div>
+                        <div class="form__line form__line--margin">
+                           <label for="message" class="form__label">Message*</label>
+                           <textarea id="message" class="form__textarea" name="message" id="" required placeholder="Your message"></textarea>
+                        </div>
+                        <div class="form__row">
+                           <div class="form__line form__line--checkbox">
+                              <input class="form__input--checkbox" id="checkbox" type="checkbox" name="agree" value="yes" required>
+                              <label for="checkbox" class="form__label form__label--checkbox">
+                                 <span>I agree to receive communications from Createx Online School</span>
+                              </label>
+                           </div>
+                           <div class="form__line">
+                              <button class="form__button button button--large-red" type="submit"><span>Send message</span></button>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer"></footer>
+   </div>
 </body>
+
 </html>

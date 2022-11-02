@@ -1,0 +1,273 @@
+/* todo ====================== Fonts ====================
+font-family: "lato";
+font-weight: 400/700/900;
+*/
+body {
+   font-family: "lato";
+   font-size: 16px;
+   color: #424551;
+}
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+   overflow: hidden;
+   position: relative;
+   /* background-color: dodgerblue; */
+}
+[class*="__container"] {
+   max-width: 1230px;
+   margin: 0 auto;
+   box-sizing: content-box;
+   padding: 0 15px;
+}
+/* ========================== Pages ===================== */
+.page {
+   flex-grow: 1;
+}
+.feedback {
+}
+/* ========================= Header ===================== */
+.header {
+}
+/* =================== Feedback section ================== */
+.page__feedback {
+   padding-top: 150px;
+}
+
+/* .feedback__container {} */
+.feedback__content {
+   display: flex;
+}
+.feedback__image {
+   flex-basis: 34.1%;
+   align-self: center;
+}
+.feedback__image img {
+   max-width: 103.57%;
+   transform: translate(-3.57%, 0);
+}
+.feedback__body {
+   flex-basis: 65.9%;
+   padding-left: 105px;
+}
+.body-feedback {
+}
+
+.body-feedback__title:not(:last-child) {
+   margin-bottom: 8px;
+}
+.body-feedback__label:not(:last-child) {
+   margin-bottom: 40px;
+}
+.body-feedback__form {
+}
+
+.form__row {
+   display: flex;
+   gap: 25px;
+   margin-bottom: 24px;
+   overflow: hidden;
+}
+.form__line {
+   width: 100%;
+}
+.form__label {
+   display: inline-block;
+   margin-bottom: 8px;
+}
+.form__textarea,
+.form__input {
+   line-height: 1.6;
+   padding: 13px 16px;
+   outline: none;
+   border: 1px solid #d7dadd;
+   border-radius: 4px;
+   cursor: pointer;
+}
+.form__textarea:focus,
+.form__input:focus {
+   cursor: text;   
+}
+.form__textarea:hover,
+.form__input:hover {
+   border: 1px solid#3a89ff71;
+}
+.form__textarea:focus:valid,
+.form__input:focus:valid {
+   border: 1px solid#3aff7c71;
+}
+.form__textarea:focus:invalid,
+.form__input:focus:invalid {
+   border: 1px solid#ff3a9c71;
+}
+.form__textarea {
+   width: 100%;
+   height: 128px;
+   margin-bottom: 48px;
+   resize: none;
+}
+.form__textarea::-webkit-scrollbar {
+   width: 0px;
+}
+.form__button {
+   width: 100%;
+}
+
+.form__line--margin {
+}
+.form__input--first-name {
+}
+.form__input--last-name {
+}
+.form__input--email {
+}
+.form__input--phone {
+}
+.form__line--checkbox {
+   display: inline-flex;
+   position: relative;
+   padding-left: 28px;
+}
+.form__input--checkbox {
+   width: 0;
+   height: 0;
+   opacity: 0;
+}
+.form__label--checkbox span {
+   display: inline-flex;
+}
+.form__label--checkbox::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 16px;
+   height: 16px;
+   border: 1px solid #ff3f3a;
+   border-radius: 3px;
+   transition: background 80ms ease;
+   }
+   .form__input--checkbox:checked + .form__label--checkbox::before {
+      background: #ff3f3a;
+   } 
+.form__label--checkbox::after {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 16px;
+   height: 16px;
+   background: url("../img/icons/check.svg") center no-repeat;
+   border-radius: 3px;
+   top: -100%;
+   }
+.form__input--checkbox:checked + .form__label--checkbox::after {
+   animation: check-icon 0.8s linear forwards;
+}
+@keyframes check-icon {
+   0% {
+      }
+   30% {
+      top: 5px;
+   }
+   45% {
+      top: -11px;
+   }
+   55% {
+      top: 5px;
+   }
+   70% {
+      top: 2px;
+   }
+   75% {
+      top: 0;
+   }
+   100% {
+      top: 0;
+   }
+}
+/* =========================== Button ====================== */
+.button {
+   display: inline-flex;
+   flex-flow: column wrap;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   border-radius: 4px;
+   overflow: hidden;
+}
+.button span {
+   letter-spacing: 0.5px;
+   font-weight: 700;
+   line-height: 1.25;
+   z-index: 1;
+}
+[class*="large"] {
+   padding: 16px 40px;
+   font-size: 16.5px;
+}
+.button--large-red {
+   position: relative;
+   background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+   color: #fff;
+}
+.button--large-transparent span,
+.button--regular-transparent span {
+   background-image: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.button--large-red::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(55.95deg, #d35004 0%, #d83732 100%);
+   opacity: 0;
+   transition: all 0.3s ease;
+}
+.button--large-red:hover::before{
+   opacity: 1;
+}
+.button:hover span {
+   animation: spin-button-text 0.5s ease;
+}
+@keyframes spin-button-text {
+   0% {
+      transform: translateY(0) scale(1);
+   }
+   49% {
+      transform: translateY(170%) scale(0.8);
+   }
+   50% {
+      opacity: 0;
+   }
+   51% {
+      transform: translateY(-170%) scale(0.8);
+      opacity: 1;
+   }
+   100% {
+      transform: translateY(0) scale(1);
+   }
+}
+/* ========================== Title and Label =================== */
+.title-container {
+   color: #1e212c;
+}
+.title {
+   font-weight: 700;
+   line-height: 150%;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+}
+.label {
+   font-weight: 900;
+   font-size: 46px;
+   line-height: 130%;
+}
+/* ========================= Footer ======================== */
+.footer {
+}

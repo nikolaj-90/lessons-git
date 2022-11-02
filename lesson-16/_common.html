@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/fonts.css">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/common.css">
+   <link rel="stylesheet" href="css/styles.css">
+   <title>Elements</title>
+</head>
+<body>
+   <div class="wrapper-input wrapper">
+      <header class="header"></header>
+      <main class="page">
+         <div class="page__container">
+            <form action="https://jsonplaceholder.typicode.com/posts" method="post" enctype="multipart/form-data" class="form-block">
+               <div class="form-line radio-group">
+                  <div class="question">Вам виповнилось 18?</div>
+                  <label class="radio">
+                     <input checked type="radio" name="age" value="adult">
+                     так
+                     <span></span>
+                  </label>
+                  <label class="radio">
+                     <input type="radio" name="age" value="minor">
+                     ні
+                     <span></span>
+                  </label>
+               </div>
+               <div class="form-line button"></div>
+            </form>
+         </div>
+      </main>
+      <footer class="footer">footer</footer>
+   </div>
+</body>
+</html>
