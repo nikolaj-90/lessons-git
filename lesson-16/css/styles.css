@@ -12,8 +12,6 @@ body {
    flex-direction: column;
    min-height: 100%;
    overflow: hidden;
-   position: relative;
-   /* background-color: dodgerblue; */
 }
 [class*="__container"] {
    max-width: 1230px;
@@ -32,12 +30,12 @@ body {
 }
 /* =================== Feedback section ================== */
 .page__feedback {
-   padding-top: 150px;
+   padding-top: 80px;
+   padding-bottom: 100px;
 }
-
-/* .feedback__container {} */
 .feedback__content {
    display: flex;
+   margin-bottom: 80px;
 }
 .feedback__image {
    flex-basis: 34.1%;
@@ -60,9 +58,6 @@ body {
 .body-feedback__label:not(:last-child) {
    margin-bottom: 40px;
 }
-.body-feedback__form {
-}
-
 .form__row {
    display: flex;
    gap: 25px;
@@ -87,7 +82,7 @@ body {
 }
 .form__textarea:focus,
 .form__input:focus {
-   cursor: text;   
+   cursor: text;
 }
 .form__textarea:hover,
 .form__input:hover {
@@ -113,25 +108,17 @@ body {
 .form__button {
    width: 100%;
 }
-
-.form__line--margin {
-}
-.form__input--first-name {
-}
-.form__input--last-name {
-}
-.form__input--email {
-}
-.form__input--phone {
-}
 .form__line--checkbox {
    display: inline-flex;
    position: relative;
    padding-left: 28px;
 }
 .form__input--checkbox {
-   width: 0;
-   height: 0;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 16px;
+   height: 16px;
    opacity: 0;
 }
 .form__label--checkbox span {
@@ -147,10 +134,10 @@ body {
    border: 1px solid #ff3f3a;
    border-radius: 3px;
    transition: background 80ms ease;
-   }
-   .form__input--checkbox:checked + .form__label--checkbox::before {
-      background: #ff3f3a;
-   } 
+}
+.form__input--checkbox:checked + .form__label--checkbox::before {
+   background: #ff3f3a;
+}
 .form__label--checkbox::after {
    content: "";
    position: absolute;
@@ -161,13 +148,13 @@ body {
    background: url("../img/icons/check.svg") center no-repeat;
    border-radius: 3px;
    top: -100%;
-   }
+}
 .form__input--checkbox:checked + .form__label--checkbox::after {
    animation: check-icon 0.8s linear forwards;
 }
 @keyframes check-icon {
    0% {
-      }
+   }
    30% {
       top: 5px;
    }
@@ -186,6 +173,88 @@ body {
    100% {
       top: 0;
    }
+}
+.feedback__radio-1 {
+   text-align: center;
+   font-family: sans-serif;
+}
+.feedback__radio-question {
+   font-size: 25px;
+   text-transform: uppercase;
+   font-weight: 700;
+   line-height: 1.2;
+}
+.feedback__radio-question:not(:last-child) {
+   margin-bottom: 10px;
+}
+.feedback__radio:not(:last-child) {
+   margin-bottom: 30px;
+}
+.radio {
+   color: #d7dadd;
+   display: inline-flex;
+   border-radius: 15% / 100%;
+   line-height: 1.6;
+   overflow: hidden;
+}
+.radio__input {
+   display: none;
+}
+.radio__label {
+   font-weight: 700;
+   text-align: center;
+   text-transform: lowercase;
+   letter-spacing: 0.3px;
+   padding: 10px 15px;
+   min-width: 50px;
+   cursor: pointer;
+   overflow: hidden;
+   background: #f75e05;
+   transition: background 0.2s linear;
+}
+.radio__input:checked + .radio__label {
+   background: #b34404;
+}
+.radio__label:not(:last-of-type) {
+   border-right: 1px solid #631411;
+}
+
+.radio-2__line {
+   display: inline-flex;
+}
+.radio-2__line:not(:last-child) {
+   margin-right: 15px;
+}
+.radio-2__label span {
+   position: relative;
+   width: 20px;
+   height: 20px;
+   border: 3px solid #d35004;
+   border-radius: 50px;
+   display: inline-block;
+}
+.radio-2__label span::before {
+   content: "";
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) scale(0);
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background: #d35004;
+   display: inline-block;
+}
+.radio-2__input:checked + .radio-2__label span::before {
+   transform: translate(-50%, -50%) scale(1);
+}
+.radio-2__input {
+   display: none;
+}
+.radio-2__label {
+   display: flex;
+   align-items: center;
+   gap: 5px;
 }
 /* =========================== Button ====================== */
 .button {
@@ -229,7 +298,7 @@ body {
    opacity: 0;
    transition: all 0.3s ease;
 }
-.button--large-red:hover::before{
+.button--large-red:hover::before {
    opacity: 1;
 }
 .button:hover span {
