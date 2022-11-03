@@ -29,6 +29,7 @@ body {
 .header {
 }
 /* =================== Feedback section ================== */
+
 .page__feedback {
    padding-top: 80px;
    padding-bottom: 100px;
@@ -49,14 +50,25 @@ body {
    flex-basis: 65.9%;
    padding-left: 105px;
 }
-.body-feedback {
+.body-feedback__title-container{
+   color: #1e212c;
 }
-
+.body-feedback__title-container:not(:last-child) {
+   margin-bottom: 40px;
+}
+.body-feedback__title{
+   font-weight: 700;
+   line-height: 150%;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+}
+.body-feedback__label {
+   font-weight: 900;
+   font-size: 46px;
+   line-height: 130%;
+}
 .body-feedback__title:not(:last-child) {
    margin-bottom: 8px;
-}
-.body-feedback__label:not(:last-child) {
-   margin-bottom: 40px;
 }
 .form__row {
    display: flex;
@@ -321,21 +333,6 @@ body {
    100% {
       transform: translateY(0) scale(1);
    }
-}
-/* ========================== Title and Label =================== */
-.title-container {
-   color: #1e212c;
-}
-.title {
-   font-weight: 700;
-   line-height: 150%;
-   letter-spacing: 1px;
-   text-transform: uppercase;
-}
-.label {
-   font-weight: 900;
-   font-size: 46px;
-   line-height: 130%;
 }
 /* ========================= Footer ======================== */
 .footer {
