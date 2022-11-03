@@ -256,6 +256,7 @@ body {
    border-radius: 50%;
    background: #d35004;
    display: inline-block;
+   transition: transform 0.2s linear;
 }
 .radio-2__input:checked + .radio-2__label span::before {
    transform: translate(-50%, -50%) scale(1);
