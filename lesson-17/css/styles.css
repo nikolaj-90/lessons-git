@@ -596,7 +596,6 @@ body {
    margin-bottom: 30px;
 }
 .courses__head-block {
-   text-align: center;
 }
 .courses__head:not(:last-child) {
 }
@@ -736,6 +735,9 @@ body {
    }
    .card-block__item:not(:last-child) {
       padding-bottom: 30px;
+   }
+   .courses__head-block {
+      text-align: center;
    }
    .courses__button--bottom {
       display: inline-flex;
