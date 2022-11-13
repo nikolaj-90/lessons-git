@@ -595,14 +595,6 @@ body {
 .courses__head {
    margin-bottom: 30px;
 }
-.courses__head-block {
-}
-.courses__head:not(:last-child) {
-}
-.courses__title:not(:last-child) {
-}
-.courses__label {
-}
 .courses__button--top {
    display: none;
 }
@@ -612,16 +604,10 @@ body {
 .courses__cards-block:not(:last-child) {
    margin-bottom: 50px;
 }
-
-.card-block {
-}
-.card-block__items {
-}
 .card-block__item {
    display: inline-block;
    width: 100%;
 }
-
 .card-block__content {
    display: flex;
    height: 100%;
