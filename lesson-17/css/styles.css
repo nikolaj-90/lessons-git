@@ -351,6 +351,9 @@ body {
    .advantages-main__decor {
       margin: 0 auto;
    }
+   .content-main__button {
+      flex: 1 0 50%;
+   }
 }
 @media (max-width: 940px) {
    .body-main__content {
@@ -358,9 +361,6 @@ body {
    }
    .content-main__title {
       font-size: 35px;
-   }
-   .content-main__button {
-      flex: 1 0 50%;
    }
 }
 @media (max-width: 770px) {
