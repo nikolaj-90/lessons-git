@@ -680,6 +680,7 @@ body {
 .card-block__specialty--orange {
    background: #f75e05;
 }
+/* ============= @medias = Courses = */
 @media (min-width: 930px) {
    .courses__head {
       display: flex;
