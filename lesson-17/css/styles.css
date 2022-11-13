@@ -743,8 +743,8 @@ body {
    }
    .card-block__image {
       min-width: 70%;
-      padding-bottom: 100%;
-      margin-bottom: 30px;
+      padding-bottom: 50%;
+      margin-bottom: 20px;
    }
    .card-block__body {
       display: flex;
