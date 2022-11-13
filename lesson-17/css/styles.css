@@ -336,11 +336,10 @@ body {
       padding: 13.5px 20px;
    }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1030px) {
    .advantages-main__item {
       display: flex;
       flex-direction: column;
-      /* flex-wrap: wrap; */
       gap: 8px;
    }
    .advantages-main__score {
@@ -401,9 +400,6 @@ body {
    .body-main__image {
       margin-bottom: 35px;
    }
-   /* .body-main__content:not(:last-child) {
-      margin-bottom: 35px;
-   } */
    .content-main__title {
       order: 1;
    }
@@ -439,7 +435,6 @@ body {
    }
    .advantages-main__item {
       flex: 1 0 100%;
-      /* justify-content: center; */
    }
    .advantages-main__decor:nth-of-type(even) {
       display: inline-flex;
@@ -525,12 +520,10 @@ body {
    width: 287px;
 }
 /* ============= @medias = About us = */
-@media (max-width: 1100px) {
+@media (max-width: 1030px) {
    .about-us__body {
       padding-left: 6.504065%; /* 80px/1230 */
    }
-}
-@media (max-width: 940px) {
    .page__about-us {
       padding: 110px 0px;
    }
@@ -709,6 +702,11 @@ body {
    .card-block__item {
       flex-basis: 50%;
       padding: 0 15px;
+   }
+}
+@media (max-width: 1030px) {
+   .page__courses {
+      padding-bottom: 100px;
    }
 }
 @media (max-width: 930px) {
