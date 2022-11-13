@@ -108,9 +108,9 @@ body {
    row-gap: 8px;
    align-items: center;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1030px) {
    .menu__list {
-      column-gap: 30px;
+      column-gap: 25px;
    }
 }
 @media (max-width: 800px) {
