@@ -742,8 +742,8 @@ body {
       align-items: center;
    }
    .card-block__image {
-      min-width: 70%;
-      padding-bottom: 50%;
+      width: 100%;
+      padding-bottom: 100%;
       margin-bottom: 20px;
    }
    .card-block__body {
