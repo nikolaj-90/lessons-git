@@ -102,7 +102,14 @@ body {
    position: relative;
    padding-left: 32px;
    line-height: 1.6;
+   min-height: 25px;
    background: url("../img/icons/check.svg") 0 5px no-repeat;
+}
+@media (max-width: 350px) {
+   .item {
+      padding-left: 25px;
+      line-height: 1.4;
+   }
 }
 /* ============================= Play block ======================= */
 .play-block {
