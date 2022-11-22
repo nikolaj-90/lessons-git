@@ -56,7 +56,7 @@
       min-height: 92px;
       @media (max-width: 1115px) {
          & {
-            gap: 35px;
+            gap: 30px;
          }
       }
    }
@@ -1025,6 +1025,16 @@
       &__body {
          grid-template-columns: 1fr;
          row-gap: 30px;
+      }
+      &__feedback-items {
+         gap: 10px;
+      }
+      &__feedback-link {
+         border: 1px solid #ff3f3a;
+         color: #ff3f3a;
+         span:active::before {
+            transform: scale(1);
+         }
       }
    }
    .body-benefist {

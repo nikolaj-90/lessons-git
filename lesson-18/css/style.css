@@ -380,7 +380,7 @@ body {
 }
 @media (max-width: 1115px) {
   .header__container {
-    gap: 35px;
+    gap: 30px;
   }
 }
 .header__logo {
@@ -1413,6 +1413,18 @@ body {
   .benefists__body {
     grid-template-columns: 1fr;
     row-gap: 30px;
+  }
+  .benefists__feedback-items {
+    gap: 10px;
+  }
+  .benefists__feedback-link {
+    border: 1px solid #ff3f3a;
+    color: #ff3f3a;
+  }
+  .benefists__feedback-link span:active::before {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
   }
   .body-benefist__img {
     grid-column: 1/2;
