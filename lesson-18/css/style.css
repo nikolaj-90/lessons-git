@@ -736,10 +736,11 @@ body {
 }
 .body-main__buttons-block {
   display: inline-grid;
-  -webkit-column-gap: 5px;
-     -moz-column-gap: 5px;
-          column-gap: 5px;
-  grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+  grid-template-columns: 1fr;
+  grid-auto-flow: column;
   justify-items: start;
 }
 

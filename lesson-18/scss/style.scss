@@ -346,8 +346,9 @@
    }
    &__buttons-block {
       display: inline-grid;
-      column-gap: 5px;
-      grid-template-columns: repeat(2, 1fr);
+      column-gap: 24px;
+      grid-template-columns: 1fr;
+      grid-auto-flow: column;
       justify-items: start;
    }
 }
