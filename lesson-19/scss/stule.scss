@@ -1,0 +1,54 @@
+@import "_reset";
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+   display: grid;
+   grid-template-columns: 120px 1fr;
+   grid-template-rows: auto 1fr auto;
+   grid-template-areas: 
+   'header header'
+   'aside main'
+   'footer footer';
+}
+.header {
+   grid-area: header;
+   padding: 20px;
+   color: #fff;
+   font-size: 40px;
+   text-align: center;
+   background-color: rgb(91, 73, 245);
+}
+.aside {
+   padding: 10px;
+   grid-area: aside;
+   background-color: rgb(73, 245, 202);
+   a {
+      display: flex;
+      font-size: 18px;
+      color: blue;
+      padding-left: 10px;
+      line-height: 1.5;
+      letter-spacing: 0.8px;
+      transition: all 0.3s ease;
+      @media (any-hover:hover) {
+         &:hover {
+            color: red;
+            transform: scale(1.2);
+         }
+      }
+   }
+   &__link-block {
+      
+      
+   }
+}
+.main {
+   grid-area: main;
+   background-color: rgb(234, 245, 73);
+   min-height: 2000px;
+   overflow: auto;
+}
+.footer {
+   grid-area: footer;
+   background-color: rgb(91, 73, 245);
+}
