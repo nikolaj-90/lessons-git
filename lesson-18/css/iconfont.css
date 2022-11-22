@@ -55,15 +55,15 @@
    -moz-osx-font-smoothing: grayscale;
 }
 
-._icon-community:before {
+._icon-community::before {
    content: "\e900";
 }
-._icon-like:before {
+._icon-like::before {
    content: "\e901";
 }
-._icon-star:before {
+._icon-star::before {
    content: "\e902";
 }
-._icon-vector:before {
+._icon-vector::before {
    content: "\e903";
 }
