@@ -1090,7 +1090,7 @@ body {
 }
 .courses__block-mentors {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template: repeat(3, 1fr)/repeat(2, 1fr);
   gap: 30px;
 }
 .courses__button {
@@ -1248,7 +1248,7 @@ body {
     margin-bottom: 25px;
   }
   .courses__block-mentors {
-    grid-template-columns: 1fr;
+    grid-template: auto/1fr;
     gap: 30px;
   }
   .courses__block-mentors:not(:last-child) {

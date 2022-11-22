@@ -710,7 +710,7 @@
    }
    &__block-mentors {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template: repeat(3, 1fr) / repeat(2, 1fr);
       gap: 30px;
    }
    &__button {
@@ -740,7 +740,7 @@
 // todo =================== mentor block items
 .item-mentor {
    display: grid;
-   grid-template-columns: 1fr 2fr;
+   grid-template-columns:  1fr 2fr;
    background: #fff;
    border: 1px solid #e5e8ed;
    &__image {
@@ -865,7 +865,7 @@
          }
       }
       &__block-mentors {
-         grid-template-columns: 1fr;
+         grid-template: auto / 1fr;
          gap: 30px;
          &:not(:last-child) {
             margin-bottom: 30px;
