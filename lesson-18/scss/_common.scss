@@ -66,6 +66,11 @@
 /* ================================= Title block ======================= */
 .title-block {
    color: #1e212c;
+   @media (max-width: 600px) {
+      & {
+         text-align: center;
+      }
+   }
 }
 .title {
    font-size: 16px;
