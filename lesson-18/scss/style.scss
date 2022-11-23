@@ -661,6 +661,9 @@
    .about-us {
       padding-top: 45px;
       padding-bottom: 30px;
+      &__decor {
+         display: none;
+      }
    }
    .body-about {
       &__block-title {

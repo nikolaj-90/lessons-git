@@ -1054,6 +1054,9 @@ body {
     padding-top: 45px;
     padding-bottom: 30px;
   }
+  .about-us__decor {
+    display: none;
+  }
   .body-about__block-title:not(:last-child) {
     margin-bottom: 20px;
   }
