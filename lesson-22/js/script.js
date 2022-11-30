@@ -40,6 +40,14 @@ console.log(body);
    body.hair = 'Червоні';
 console.log(body);
 
+let testBlock_1 = null;
+console.log(testBlock_1);
+console.log(typeof testBlock_1);
+
+let userAge = 31;
+let userInfo = `Мені — ${userAge} рік`;
+console.log(userInfo);
+
 let doYouLikeIt;
 doYouLikeIt = prompt('Ви хочете продовжити?');
 if (doYouLikeIt) {
@@ -49,10 +57,3 @@ if (doYouLikeIt) {
    alert('Хм');
    console.log(`:( Ви ввели: ${doYouLikeIt}`);
 }
-let testBlock_1 = null;
-console.log(testBlock_1);
-console.log(typeof testBlock_1);
-
-let userAge = 31;
-let userInfo = `Мені — ${userAge} рік`;
-console.log(userInfo);

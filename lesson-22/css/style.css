@@ -143,7 +143,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 1.875rem;
-  padding-bottom: 11.25rem;
+  padding-bottom: 12.5rem;
 }
 .main__container {
   max-width: 75rem;
@@ -194,11 +194,6 @@ body {
 }
 
 .card__body {
-  -webkit-transition: -webkit-transform 0.7s ease;
-  transition: -webkit-transform 0.7s ease;
-  -o-transition: transform 0.7s ease;
-  transition: transform 0.7s ease;
-  transition: transform 0.7s ease, -webkit-transform 0.7s ease;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -208,9 +203,14 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 2.5rem;
-  padding: 2rem 1.875rem;
+  padding: 2.5rem;
   border-radius: 20%/70%;
   height: 100%;
+  -webkit-transition: -webkit-transform 0.7s ease;
+  transition: -webkit-transform 0.7s ease;
+  -o-transition: transform 0.7s ease;
+  transition: transform 0.7s ease;
+  transition: transform 0.7s ease, -webkit-transform 0.7s ease;
 }
 @media (any-hover: hover) {
   .card__body:hover {

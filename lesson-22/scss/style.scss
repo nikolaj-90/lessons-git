@@ -56,7 +56,7 @@ $descriptionColor: rgb(137, 165, 240);
    display: flex;
    justify-content: center;
    padding-top: 1.875rem;
-   padding-bottom: 11.25rem;
+   padding-bottom: 12.5rem;
    &__container {
       max-width: 75rem;
       margin: 0px auto;
@@ -104,6 +104,14 @@ $descriptionColor: rgb(137, 165, 240);
 }
 .card {
    &__body {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      row-gap: 2.5rem;
+      padding: 2.5rem;
+      @extend %borderBody;
+      border-radius: 20% / 70%;
+      height: 100%;
       transition: transform 0.7s ease;
       @media (any-hover: hover) {
          &:hover {
@@ -112,14 +120,6 @@ $descriptionColor: rgb(137, 165, 240);
             z-index: 1;
          }
       }
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      row-gap: 2.5rem;
-      padding: 2rem 1.875rem;
-      @extend %borderBody;
-      border-radius: 20% / 70%;
-      height: 100%;
    }
    &__title {
       position: relative;
