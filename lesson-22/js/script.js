@@ -41,7 +41,7 @@ console.log(body);
 console.log(body);
 
 let doYouLikeIt;
-doYouLikeIt = prompt('Вам сподобалось?');
+doYouLikeIt = prompt('Ви хочете продовжити?');
 if (doYouLikeIt) {
    alert('Дякую');
    console.log(`:) Ви ввели: ${doYouLikeIt}`);
