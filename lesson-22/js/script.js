@@ -52,8 +52,8 @@ let doYouLikeIt;
 doYouLikeIt = prompt('Ви хочете продовжити?');
 if (doYouLikeIt) {
    alert('Дякую');
-   console.log(`:) Ви ввели: ${doYouLikeIt}`);
+   console.log(`:) Ви ввели: ${doYouLikeIt}. Тип данних — ${typeof doYouLikeIt}`);
 } else {
    alert('Хм');
-   console.log(`:( Ви нічого не ввели ! ! ! ${doYouLikeIt}`);
+   console.log(`:( Ви нічого не ввели! ! ! ${doYouLikeIt}, Тип данних — ${typeof doYouLikeIt}`);
 }
