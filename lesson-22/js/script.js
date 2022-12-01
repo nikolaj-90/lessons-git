@@ -55,5 +55,5 @@ if (doYouLikeIt) {
    console.log(`:) Ви ввели: ${doYouLikeIt}`);
 } else {
    alert('Хм');
-   console.log(`:( Ви ввели: ${doYouLikeIt}`);
+   console.log(`:( Ви нічого не ввели ! ! ! ${doYouLikeIt}`);
 }
