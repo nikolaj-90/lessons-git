@@ -1,19 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
    <link rel="stylesheet" href="css/styles.css">
-   <title>lesson-21</title>
+   <title>lesson-23</title>
 </head>
+
 <body>
    <div class="wrapper">
       <header class="header">
       </header>
-      <main class="main"></main>
+      <main class="page">
+         <section class="page__home-work work-home">
+            <div class="work-home__container">
+               <div class="work-home__greeting-block block-greeting">
+                  <h1 class="block-greeting__title">Основи <span>JavaScript</span></h1>
+                  <h2 class="block-greeting__sub-title">Частина 2 з 4</h2>
+               </div>
+               <div class="work-home__body">
+                  <article class="work-home__item item-home">
+                     <div class="item-home__block">
+                        <h3 class="item-home__title"><a href="https://youtu.be/oSO_StIWaXM">Відео — 1</a></h3>
+                        <div class="item-home__body">
+                           <div class="item-home__task-body only-one">
+                              <div class="item-home__questions">Варіант №1 <span>console.log('35' + - "22");</span> // Поверне 13 ?
+                              </div>
+                              <div class="item-home__answer">
+                                 Варіант 1 – не вірно, оператор <span>"+"</span> тільки з'еднає два рядки із <span>" - "</span> і поверне рядок <span>35-22</span>, тому що рядок <span>"35"</span> залишається рядком а не числом.
+                                 Щоб вирахувати <span>13</span> потрібно до <span>"35"</span> поставити <span>"+"</span> - це конвертує його в число так же як і <span>- "22"</span>. (<span>" - "</span> дасть від'ємне значення).
+                              </div>
+                           </div>
+                           <div class="item-home__task-body only-one">
+                              <div class="item-home__questions">Вариант №2 <span>console.log('35' * "22");</span> // Поверне 770 ?
+                              </div>
+                              <div class="item-home__answer">
+                                 Варіант 2 – вірно, оператор множення переведе типи данних із <span>string</span> в <span>number</span> і порахує їх. Із такими двума видами лапок буде працювати, головне що закриті тикими же.
+                              </div>
+                           </div>
+                           <div class="item-home__task-body only-one">
+                              <div class="item-home__questions">
+                                 Вариант №3 <span>console.log('558' > 22++);</span> //Поверне true ?
+                              </div>
+                              <div class="item-home__answer">
+                                 Варіант 3 – викличе помилку, тому що інкремент заборонено використовувати із числами. Тільки зі змінними.
+                              </div>
+                           </div>
+                           <div class="item-home__task-body only-one">
+                              <div class="item-home__questions">
+                                 Вариант №4 <span>let usersCounter = 0; let newUsers = usersCounter++; console.log(newUsers);</span> // Поверне 1 ?
+                              </div>
+                              <div class="item-home__answer">
+                                 Варіант 4 – не вірно, тут використовується суфіксний інкремент, <span>userCounter++</span> поверне <span>newUsers 0</span> а потім виконає зростання на <span>1</span>.
+                              </div>
+                           </div>
+                           <div class="item-home__task-body only-one">
+                              <div class="item-home__questions">
+                                 Вариант №5 <span>console.log(!false && 11 || 18 && !'');</span> //Поверне 18 ?
+                              </div>
+                              <div class="item-home__answer">
+                                 Варіант 5 – не вірно. Спочатку виконаються <span>&&</span> де повернуть <span>true</span> а потім виконається <span>||</span> порівняння з ліва на право, де в порівнянні два <span>(true)</span> поверне останнє <span>11(true)</span> що потім відобразиться в консолі.
+                              </div>
+                           </div>
+                           <div class="item-home__task-body only-one">
+                              <div class="item-home__questions">
+                                 Вариант №6 <span>let name = 0; console.log(name ?? "Без имени")</span>
+                              </div>
+                              <div class="item-home__answer">
+                                 Варіант 6 – поверне <span>"0"</span> так як нуль це тип данних <span>number</span> і не є <span>null</span> чи <span>undefined</span>.
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </article>
+                  <article class="work-home__item item-home">
+                     <div class="item-home__block">
+                        <h3 class="item-home__title"><a href="https://youtu.be/tFyRhDZgHaU">Відео — 2</a></h3>
+                        <div class="item-home__body">
+                           <div class="item-home__task-body only-one">
+                              <div class="item-home__questions">
+                                 Вариант №1 <span>if (1 === "1") {console.log('Истина!');} else {console.log('Ложь!');}</span>
+                              </div>
+                              <div class="item-home__answer">
+                                 Варіант 1 – <span>if(1 === "1")</span> - сурова рівність не конвертує в числа а буде зрівати типи данних, тут типи різні що дає <span>false</span>. Тому цей варіант не поверне <span>console.log("Истина!")</span>;
+                              </div>
+                           </div>
+                           <div class="item-home__task-body only-one">
+                              <div class="item-home__questions">
+                                 Вариант №2 <span>if (5 == "5") { console.log('Истина!'); } else { console.log('Ложь!'); }</span>
+                              </div>
+                              <div class="item-home__answer">
+                                 Варіант 2 – вірний, <span>"=="</span> конвертує тип із <span>"string"</span> в <span>"number"</span> і потім зрівняє значення <span>5</span> і <span>5</span> й виконаеться <span>console.log('Истина!'); </span>
+                              </div>
+                           </div>
+                           <div class="item-home__task-body only-one">
+                              <div class="item-home__questions">
+                                 Вариант №3 <span>let message = (92 > '11' && 58 < 100) ? 'Истина!' : 'Ложь!' ;console.log(message);</span>
+                              </div>
+                              <div class="item-home__answer">
+                                 Варіант 3 – поверне <span>"Істина"</span>, так як всі умови <span>true</span>.
+                              </div>
+                           </div>
+                           <div class="item-home__task-body only-one">
+                              <div class="item-home__questions">
+                                 Вариант №4 <span>if (0) { console.log('Ложь!'); } else if (" ") { console.log('Истина!'); }</span>
+                              </div>
+                              <div class="item-home__answer">
+                                 Варіант 4 – вірний, в умові <span>if(0)</span> - це <span>false</span> а <span>else if (' ')</span> - є пробіл це <span>true</span> і виконає <span>console.log('Истина!');</span>
+                              </div>
+                           </div>
+
+                        </div>
+                     </div>
+                  </article>
+                  <article class="work-home__item item-home">
+                     <div class="item-home__block">
+                        <h3 class="item-home__title"><a href="https://youtu.be/QjDzp-yM_To">Відео — 3</a></h3>
+                        <div class="item-home__body">
+                           <div class="item-home__task-body only-one">
+                              <div class="item-home__questions">
+                                 Завдання №1
+                              </div>
+                              <div class="item-home__answer">
+                                 Вивести в консоль числа від 1 до 5 <span>Відповідь у консолі</span>
+                              </div>
+                           </div>
+                           <div class="item-home__task-body only-one">
+                              <div class="item-home__questions">
+                                 Завдання №2 <span>let num = 8; while (num) { console.log(num); num--; }</span> //Останній результат 0, вірно?
+                              </div>
+                              <div class="item-home__answer">
+                                 Варіант 2 – ні не вірно <span>"0"</span> це <span>false</span> одже цикл зупинться, а якщо зупиниться то в консоль не виведеться, залишиться останнє число яке було записано при <span>true</span> це <span>"1"</span>.
+                              </div>
+                           </div>
+                           <div class="item-home__task-body only-one">
+                              <div class="item-home__questions">
+                                 Завдання №3.
+                              </div>
+                              <div class="item-home__answer">
+                                 Переписати на <span>while for (let num = 0; num < 3; num++) { console.log(`Число: ${num}`); }</span>
+                              </div>
+                           </div>
+                           <div class="item-home__task-body only-one">
+                              <div class="item-home__questions">
+                                 Завдання №4. Завершити роботу цикла №1 коли size дорівнює 1
+                              </div>
+                              <div class="item-home__answer">
+                                 //Цикл №1 <span>for (let num = 0; num < 2; num++) {</span> //Цикл №2 <span>for (let size = 0; size < 3; size++) { console.log(size); } }</span>. Рішення в консолі.
+                              </div>
+                           </div>
+
+                        </div>
+                     </div>
+                  </article>
+                  <article class="work-home__item item-home">
+                     <div class="item-home__block">
+                        <h3 class="item-home__title"><a href="https://youtu.be/jc5Upe8xIN0">Відео — 4</a></h3>
+                        <div class="item-home__body">
+                           <div class="item-home__task-body only-one">
+                              <div class="item-home__questions">
+                                 Задача №1. Чи вірний запис? <span> let fls = "фрилансер"; let text = 'Привет! Я ${fls}';</span> // Очікуємо Отримати Привет! Я фрилансер <span>console.log(text);</span>
+                              </div>
+                              <div class="item-home__answer">
+                                 Варіант 1 – Не вірні лапки, потрібні зворотні щоб запис спрацював <span>"let text = 'Привет! Я ${fls}'; — (``)</span>.
+                              </div>
+                           </div>
+                           <div class="item-home__task-body only-one">
+                              <div class="item-home__questions">
+                                 Задача №2. Отримати символ <span>"н"</span> рядка: <span>let text = 'фрилансер';</span>
+                              </div>
+                              <div class="item-home__answer">
+                                 Варіант 2 – Відповідь в консолі.
+                              </div>
+                           </div>
+                           <div class="item-home__task-body only-one">
+                              <div class="item-home__questions">
+                                 Задача №3. Вірно? <span>let text = 123 + "456";</span> // Очікуєм 579 <span>console.log(text);</span>
+                              </div>
+                              <div class="item-home__answer">
+                                 Задача 3 – <span>"let text = 123 + "456";</span> — Очікуєм 579" Не вірно, оператор "+" тільки складе два рядки - 123456. Щоб додати потрібно два типи данних Number або поставити що один плюс біля рядка +"456"(інвертувати в Number).
+                              </div>
+                           </div>
+                           <div class="item-home__task-body only-one">
+                              <div class="item-home__questions">
+                                 Задача №4. Отримати рядок у верхньому регістрі <span>let text = 'фрилансер';</span>
+                              </div>
+                              <div class="item-home__answer">
+                                 Варіант 4 – Відповідь в консолі.
+                              </div>
+                           </div>
+                           <div class="item-home__task-body only-one">
+                              <div class="item-home__questions">
+                                 Задача №5. Отримати підрядок <span>"лан"</span> из: <span>let text = 'фрилансер';</span>
+                              </div>
+                              <div class="item-home__answer">
+                                 Варіант 5 – Рішення в консолі.
+                              </div>
+                           </div>
+                           <div class="item-home__task-body only-one">
+                              <div class="item-home__questions">
+                                 Задача №6. true або false ? <span>let text = 'фрилансер'; console.log(text.includes('лан', 4));</span>
+                              </div>
+                              <div class="item-home__answer">
+                                 Варіант 5 – <span>"text_03.includes('лан', 3)"</span>. Буде <span>false</span> так як з індекса <span>4</span> буде <span>'ан'</span>. Відлік індеса починається із <span>"0"</span>.
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </article>
+               </div>
+            </div>
+         </section>
+      </main>
       <footer class="footer"></footer>
    </div>
+   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+   <script src="js/script-sp.js"></script>
    <script src="js/script.js"></script>
 </body>
+
 </html>

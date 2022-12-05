@@ -1,6 +1,4 @@
 "use strict"
-
-
 let user;
 console.log(typeof user);
 let userName = 'Вася',
