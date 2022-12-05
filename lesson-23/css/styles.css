@@ -117,7 +117,7 @@ body {
   gap: 1.25rem;
 }
 .work-home__item {
-  background: rgba(88, 68, 1, 0.2);
+  background: rgba(88, 72, 1, 0.25);
 }
 
 .block-greeting__title {
@@ -201,7 +201,7 @@ body {
   font-size: 1.5625rem; /* 25/16 */
 }
 .item-home__questions span {
-  color: rgb(46, 245, 135);
+  color: rgb(135, 243, 211);
 }
 .item-home__questions::before, .item-home__questions::after {
   content: "";
@@ -224,7 +224,7 @@ body {
   left: 0px;
 }
 .item-home__questions.active::before, .item-home__questions.active::after {
-  background: rgb(252, 72, 1);
+  background: rgb(252, 30, 1);
 }
 .item-home__questions.active::after {
   -webkit-transform: rotate(0deg);
