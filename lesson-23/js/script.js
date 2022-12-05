@@ -122,7 +122,10 @@ function showSum(sum) {
 adaptivWidth(num_01, num_2, num_3);
 let text_03 = 'фрилансер';
 console.log(text_03.includes('лан', 3));
-/*console.log('========================= Тренеровка ================================');
+console.log(' ');
+console.log(' ');
+console.log(' ');
+console.log('============================================ Тренеровка ==================================================');
 let userNum = "22",
    userNum_2 = "35";
 console.log(+userNum_2 + -userNum);
@@ -140,7 +143,7 @@ if (0) {
    console.log('Це пустий рядок');
 }
 
-let message = (92 > '11' && 58 < 100) ?  console.log('Це істина') : console.log('Це не стина');
+let message = (92 > '11' && 58 < 100) ? console.log('Це істина') : console.log('Це не стина');
 
 console.log('========================= Length ================================');
 let userValue = `Привіт. Це javaScript!`;
@@ -194,4 +197,4 @@ let widthNum = parseFloat(userWidth),
 let numResult = (heightNum / widthNum) * percentNum + '%';
 console.log(`${numResult} - парсфлоат`);
 console.log(`${someNumParce + 'rem'} - парсінт`);
-*/
+
