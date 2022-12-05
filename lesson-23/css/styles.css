@@ -116,6 +116,9 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(28.125rem, 1fr));
   gap: 1.25rem;
 }
+.work-home__item {
+  background: rgba(88, 68, 1, 0.2);
+}
 
 .block-greeting__title {
   font-size: 4.375rem;
@@ -152,7 +155,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: rgb(3, 4, 17);
 }
 .item-home__block {
   padding: 1.5625rem;
