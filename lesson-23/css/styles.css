@@ -152,6 +152,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: rgb(3, 4, 17);
 }
 .item-home__block {
   padding: 1.5625rem;
