@@ -45,9 +45,6 @@ body {
       grid-template-columns: repeat(auto-fit, minmax(28.125rem, 1fr)); //28.125rem
       gap: 1.25rem;
    }
-   &__item {
-      background: $cardsColor;
-   }
 }
 .block-greeting {
    &__title {
@@ -83,6 +80,7 @@ body {
    &__block {
       padding: 1.5625rem;
       border: 0.0625rem solid #fff;
+      background: $cardsColor;
       border-radius: 1.25rem / 1.5rem;
       flex-grow: 1;
    }
