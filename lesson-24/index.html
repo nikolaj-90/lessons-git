@@ -1,20 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/reset.css">
-   <link rel="stylesheet" href="css/styles.css">
-   <title>lesson-21</title>
+   <link rel="stylesheet" href="css/style.css">
+   <title>lesson-24</title>
 </head>
+
 <body>
    <div class="wrapper">
       <header class="header">
-         
+         header
       </header>
-      <main class="main"></main>
-      <footer class="footer"></footer>
+      <main class="main">
+         <div class="main__container">
+            <h1 class="title">Заголовок</h1>
+            <div class="text">
+               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam error commodi iste reiciendis laudantium atque beatae nam enim esse placeat. Quis, inventore nemo? Consectetur rem necessitatibus pariatur officia alias ipsa.
+            </div>
+            <!-- Задача №1. Получить в переменную элемент с атрибутом data-say-hi и прочитать значение этого атрибута -->
+            <div class="task-one" data-say-hi="yes">Привет!</div>
+            <!-- Задача №2. Получить в переменную элемент с текстом Йончи -->
+            <div class="task-two">
+               <ul>
+                  <li>Корчи</li>
+                  <li>Йончи</li>
+               </ul>
+            </div>
+            <!-- Задача №3. Получить в переменную коллекцию элементов с классом like -->
+            <div class="task-three">
+               <div class="like"></div>
+               <div class="subscribe"></div>
+               <div class="like subscribe"></div>
+            </div>
+            <!-- Задача №4. Куда добавится <li>Текст</li> ? -->
+            <div class="task-four">
+               <!-- JS
+               const list = document.querySelectorAll('ul');
+               list.insertAdjacentHTML(
+               'beforeend',
+               '<li>Текст</li>'
+               ); -->
+               <ul>
+                  <li>Пункт №1</li>
+                  <li>Пункт №2</li>
+               </ul>
+            </div>
+            <div class="block-lorem">
+               <div class="block-lorem__item">
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perferendis, rerum similique dolores cupiditate non dignissimos ducimus cumque porro blanditiis dolorum? Repellat, enim distinctio eveniet assumenda, mollitia quidem nihil quaerat dicta, voluptatum quae voluptatibus ipsa! Asperiores, necessitatibus. Quis eum reiciendis, nam culpa fugit labore nulla. Magnam animi voluptatem assumenda autem est quasi voluptas reprehenderit delectus harum deserunt sint itaque neque quidem at sit libero fugiat unde eveniet deleniti, expedita excepturi debitis quis! Alias laudantium ratione dolorum consectetur nostrum eveniet ullam adipisci, iusto delectus corrupti, aut ea voluptatem aliquid ipsam, vel pariatur voluptates aspernatur rerum aliquam fugit non sapiente possimus. In!</p>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perferendis, rerum similique dolores cupiditate non dignissimos ducimus cumque porro blanditiis dolorum? Repellat, enim distinctio eveniet assumenda, mollitia quidem nihil quaerat dicta, voluptatum quae voluptatibus ipsa! Asperiores, necessitatibus. Quis eum reiciendis, nam culpa fugit labore nulla. Magnam animi voluptatem assumenda autem est quasi voluptas reprehenderit delectus harum deserunt sint itaque neque quidem at sit libero fugiat unde eveniet deleniti, expedita excepturi debitis quis! Alias laudantium ratione dolorum consectetur nostrum eveniet ullam adipisci, iusto delectus corrupti, aut ea voluptatem aliquid ipsam, vel pariatur voluptates aspernatur rerum aliquam fugit non sapiente possimus. In!</p>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perferendis, rerum similique dolores cupiditate non dignissimos ducimus cumque porro blanditiis dolorum? Repellat, enim distinctio eveniet assumenda, mollitia quidem nihil quaerat dicta, voluptatum quae voluptatibus ipsa! Asperiores, necessitatibus. Quis eum reiciendis, nam culpa fugit labore nulla. Magnam animi voluptatem assumenda autem est quasi voluptas reprehenderit delectus harum deserunt sint itaque neque quidem at sit libero fugiat unde eveniet deleniti, expedita excepturi debitis quis! Alias laudantium ratione dolorum consectetur nostrum eveniet ullam adipisci, iusto delectus corrupti, aut ea voluptatem aliquid ipsam, vel pariatur voluptates aspernatur rerum aliquam fugit non sapiente possimus. In!</p>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perferendis, rerum similique dolores cupiditate non dignissimos ducimus cumque porro blanditiis dolorum? Repellat, enim distinctio eveniet assumenda, mollitia quidem nihil quaerat dicta, voluptatum quae voluptatibus ipsa! Asperiores, necessitatibus. Quis eum reiciendis, nam culpa fugit labore nulla. Magnam animi voluptatem assumenda autem est quasi voluptas reprehenderit delectus harum deserunt sint itaque neque quidem at sit libero fugiat unde eveniet deleniti, expedita excepturi debitis quis! Alias laudantium ratione dolorum consectetur nostrum eveniet ullam adipisci, iusto delectus corrupti, aut ea voluptatem aliquid ipsam, vel pariatur voluptates aspernatur rerum aliquam fugit non sapiente possimus. In!</p>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perferendis, rerum similique dolores cupiditate non dignissimos ducimus cumque porro blanditiis dolorum? Repellat, enim distinctio eveniet assumenda, mollitia quidem nihil quaerat dicta, voluptatum quae voluptatibus ipsa! Asperiores, necessitatibus. Quis eum reiciendis, nam culpa fugit labore nulla. Magnam animi voluptatem assumenda autem est quasi voluptas reprehenderit delectus harum deserunt sint itaque neque quidem at sit libero fugiat unde eveniet deleniti, expedita excepturi debitis quis! Alias laudantium ratione dolorum consectetur nostrum eveniet ullam adipisci, iusto delectus corrupti, aut ea voluptatem aliquid ipsam, vel pariatur voluptates aspernatur rerum aliquam fugit non sapiente possimus. In!</p>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="footer">
+         footer
+      </footer>
    </div>
+   <script src="js/script.js"></script>
 </body>
+
 </html>

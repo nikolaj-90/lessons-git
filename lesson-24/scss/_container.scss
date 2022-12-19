@@ -1,0 +1,9 @@
+[class*="__container"] {
+   max-width: 1250rem;
+   padding: 0px 15rem;
+   margin: 0 auto;
+   box-sizing: content-box;
+   @media (max-width: 450em){
+      padding: 0px 8rem;
+   }
+}

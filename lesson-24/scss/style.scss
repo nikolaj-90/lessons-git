@@ -1,0 +1,117 @@
+@import "_null";
+@import "_container";
+@import "_wrapper";
+
+$colorYellow: rgb(245, 170, 9);
+$colorFooter: rgb(0, 162, 255);
+$colorTitile: rgb(7, 190, 151);
+$colorList: rgb(247, 194, 80);
+$colorBackgronnd: rgb(70, 253, 146);
+$fontSizeText: 1.125rem;
+$fontSizeLi: 1.25rem;
+$fontSizeHeader: 2.625rem;
+$fontSizeFooter: 1.875rem;
+$fontSizeTitle: 1.75rem;
+
+%listStyle {
+   font-size: $fontSizeLi;
+   color: $colorList;
+   line-height: 1.2;
+   &:not(:last-child) {
+      margin-bottom: 0.5em;
+   }
+}
+
+
+
+.header {
+color: $colorYellow;
+text-align: center;
+display: flex;
+min-height: 3.75rem;
+align-items: center;
+justify-content: center;
+font-weight: 700;
+text-transform: uppercase;
+text-decoration: underline;
+letter-spacing: 0.1875em;
+font-size: $fontSizeHeader;
+line-height: 1.5;
+}
+.main {
+   &__container {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2rem;
+      padding-top: 7.5em;
+      padding-bottom: 5em;
+   }
+}
+.title {
+   text-align: center;
+   color: $colorTitile;
+   font-size: 3.125rem;
+
+}
+.text {
+   line-height: 1.2;
+   font-size: $fontSizeText;
+
+}
+.task-one {
+   text-align: center;
+   font-size: $fontSizeTitle;
+   color: $colorYellow;
+   }
+.task-two {
+   li {
+      @extend %listStyle;
+   } 
+}
+.task-three {
+}
+.like {
+}
+.subscribe {
+}
+.task-four {
+   li {
+      @extend %listStyle;
+   }
+}
+.footer {
+   color: $colorFooter;
+   padding-top: 0.625rem;
+   padding-bottom: 0.625rem;
+   text-align: center;
+   text-transform: lowercase;
+   font-size: $fontSizeFooter;
+   font-weight: 600;
+   text-decoration: overline;
+   letter-spacing: 0.1875em;
+}
+
+.block-lorem {
+   display: flex;
+   align-self: center;
+   width: 43.75em;
+   height: 31.25em;
+   overflow: auto;
+   padding: 0.9375rem;
+   background: $colorBackgronnd;
+   border-radius: 1.25em / 0.9375em;
+   border: 0.625rem solid $colorYellow;
+   &__item {
+      color: #222;
+      line-height: 1.2;
+      p {
+         text-indent: 1.25em;
+         &:not(:last-child) {
+            margin-bottom: 1.25em;
+         }
+         &:last-child {
+            padding-bottom: 0.9375rem;
+         }
+      }
+   }
+}

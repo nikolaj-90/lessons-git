@@ -1,0 +1,12 @@
+.wrapper {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+   min-height: 100%;
+   main {
+      flex-grow: 1;
+   }
+   background: #444;
+   color: #fff;
+}
