@@ -1,20 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/reset.css">
-   <link rel="stylesheet" href="css/styles.css">
-   <title>lesson-21</title>
+   <link rel="stylesheet" href="css/style.css">
+   <title>Document</title>
 </head>
+
 <body>
    <div class="wrapper">
-      <header class="header">
-         
-      </header>
-      <main class="main"></main>
-      <footer class="footer"></footer>
+      <header class="header">header</header>
+      <main class="page">
+         <div class="page__correction-of-mistakes mistakes-correction">
+            <div class="mistakes-correction__container">
+               <!-- Задача №1. Получить в переменную элемент с атрибутом data-say-hi и прочитать значение этого атрибута -->
+               <div class="task-one" data-say-hi="yes">Привет!</div>
+               <!-- Задача №2. Получить в переменную элемент с текстом Йончи -->
+               <div class="task-two">
+                  <ul>
+                     <li>Корчи</li>
+                     <li>Йончи</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <!-- <div class="page__workout workout">
+            <div class="workout__container">
+               <div class="workout__botton-block">
+                  <button class="button-test" type="button"><span>кнопка</span></button>
+                  <button class="botton" type="button"><span>ще одна</span></button>
+                  <button class="botton" type="button"><span>ще є</span></button>
+                  <button class="botton" type="button"><span>це не остання</span></button>
+                  <button class="botton" type="button"><span>кінець</span></button>
+               </div>
+               <div class="workout__menu-container">
+                  <nav class="menu">
+                     <button class="menu__button" type="button">
+                        <span>Відкрити</span>
+                        <span>Закрити</span>
+                     </button>
+                     <ul hidden class="menu__list">
+                        <li><a href="https://www.google.com/" class="menu__link" target="_blank">Пункт 1</a></li>
+                        <li><a href="#" class="menu__link">Пункт 2</a></li>
+                        <li><a href="#" class="menu__link">Пункт 3</a></li>
+                        <li><a href="#" class="menu__link">Пункт 4</a></li>
+                        <li><a href="#" class="menu__link">Пункт 5</a></li>
+                        <li><a href="#" class="menu__link">Пункт 6</a></li>
+                        <li><a href="#" class="menu__link">Пункт 7</a></li>
+                     </ul>
+                  </nav>
+               </div>
+               <div class="workout__poligon poligon">
+                  <div class="poligon__for-mouse"></div>
+                  <div class="poligon__for-mouse-over"><span>Це SPAN</span></div>
+                  <div class="poligon__for-mouse-enter"><span>Це SPAN</span></div>
+                  <div class="poligon__for-mouse-numbers poligon__for-mouse-numbers--grid">
+                     <span>1</span>
+                     <span>2</span>
+                     <span>3</span>
+                     <span>4</span>
+                     <span>5</span>
+                     <span>6</span>
+                     <span>7</span>
+                     <span>8</span>
+                     <span>9</span>
+                  </div>
+               </div>
+               <div class="workout__textarea textarea">
+                  <textarea class="textarea__item" name="form[]" autocomplete="off" maxlength="50"></textarea>
+                  <div class="textarea__counter">Залишилося: <span></span> символів</div>
+               </div>
+            </div>
+         </div> -->
+         <div class="page__home-work home-work">
+            <div class="home-work__container">
+               <div class="home-work__wrapper">
+                  <button type="button" class="home-work__button">
+                     <span class="_icon-hipster"></span>
+                     <span class="_icon-hipster2"></span>
+                  </button>
+                  <form hidden action="#" method="post" class="home-work__form">
+                     <div class="home-work__input-box-name">
+                        <input type="name" placeholder="Ваш запит" maxlength="50" class="home-work__input-name input">
+                        <div class="input-count">У вас залишилося: <span></span> символів.</div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="footer">footer</footer>
    </div>
+   <script src="js/script.js"></script>
 </body>
+
 </html>

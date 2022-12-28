@@ -1,0 +1,13 @@
+.wrapper {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+   min-height: 100%;
+   font-family: "Montserrat";
+   main {
+      flex-grow: 1;
+   }
+   background: #444;
+   color: #fff;
+}

@@ -1,5 +1,6 @@
-console.log('============================================= Відео - 1 function() =============================================');
 'use strict'
+console.log('============================================= Відео - 1 function() =============================================');
+/*
 if (2 > 1) {
    function showMessage() {
       console.log('Сообщение');
@@ -7,6 +8,7 @@ if (2 > 1) {
 }
 showMessage(); // Error (showMessage is not defined)
 // Не зрозумів задачі, все ж працює ???
+*/
 console.log(`=================================== Відео - 2 Массивы =====================================================`);
 console.log(`================= Завдання 1 ==================`);
 let arr = ['Ваня', 'Иштван', 'Оля',];
@@ -84,17 +86,31 @@ console.log(getHeade);
 const childNodes = getBody.childNodes;
 console.log(childNodes); */
 
-console.log(`================= Завдання 1 ==================`);
-const getingTaskOne = document.querySelector('.task-one');
+console.log(`================= ! ! !  Завдання 1 ==================`);
+/*const getingTaskOne = document.querySelector('.task-one');
 const getingElementAtribut = getingTaskOne.getAttribute('data-say-hi');
-console.log(getingElementAtribut)
+console.log(getingElementAtribut)*/
+const getElemAtriboot = document.querySelector('.task-one');
+console.log(getElemAtriboot.dataset.sayHi);
+
 
 console.log(`================= Завдання 2 ==================`);
-const getingTaskTwo = document.querySelector('.task-two>ul');
-const getingElementTaskTwo = getingTaskTwo.lastElementChild;
-console.log(getingElementTaskTwo);
+/*
+const getingTaskTwo_01 = document.querySelectorAll('.task-two > ul > li');
+console.log(getingTaskTwo_01[1]);
+getingTaskTwo_01.forEach(getingTaskTwoItem => {
+   console.log(getingTaskTwoItem);
+   
+})
+*/
+const getingTaskTwo = document.querySelectorAll('.task-two > ul > li')[1];
+console.log(getingTaskTwo);
+const getingTaskTwoText = getingTaskTwo.textContent;
+console.log(getingTaskTwoText);
+
+
 //const getingElementTaskTwo = getingTaskTwo.getElementsByTagName('li');
-//console.log(getingElementTaskTwo[1])
+//console.log(getingElementTaskTwo)
 
 console.log(`================= Завдання 3 ==================`);
 //const getElements = document.querySelector('.task-three');
