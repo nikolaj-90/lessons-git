@@ -12,251 +12,282 @@ $colorBackground: rgb(39, 238, 66);
 
 .header,
 .footer {
-   text-align: center;
-   font-size: 30px;
-   line-height: 2;
-   text-transform: lowercase;
-   color: rgba(144, 225, 250, 0.623);
+	text-align: center;
+	font-size: 30px;
+	line-height: 2;
+	text-transform: lowercase;
+	color: rgba(144, 225, 250, 0.623);
 }
 
 .page {
-   &__correction-of-mistakes {
-      padding-top: 80px;
-      padding-bottom: 60px;
-      display: grid;
-   }
+	&__correction-of-mistakes {
+		padding-top: 80px;
+		padding-bottom: 60px;
+		display: grid;
+	}
 
-   &__workout {
-      padding-top: 60px;
-   }
+	&__workout {
+		padding-top: 60px;
+	}
 }
 
 .mistakes-correction {
-   display: none;
+	display: none;
 }
 
 .task-one {
-   color: $colorButtonTwo;
+	color: $colorButtonTwo;
 }
 
 .task-two {
-   ul>li {
-      line-height: 2;
-   }
+	ul>li {
+		line-height: 2;
+	}
 }
 
 .workout {
-   &__container {
-      display: grid;
-      justify-content: center;
-      row-gap: 50px;
-   }
+	&__container {
+		display: grid;
+		justify-content: center;
+		row-gap: 50px;
+	}
 
-   &__botton-block {
-      display: flex;
-      flex-wrap: wrap;
-      //flex-direction: column;
-      gap: 15px;
-   }
+	&__botton-block {
+		display: flex;
+		flex-wrap: wrap;
+		//flex-direction: column;
+		gap: 15px;
+	}
 }
 
 .botton,
 .button-test,
 .menu__button {
-   max-width: 300px;
-   min-width: 200px;
-   background: $colorButton;
-   color: $colorFont;
-   font-size: 18px;
-   font-weight: 600;
-   letter-spacing: 1px;
-   padding: 10px 20px;
-   border-radius: 10px / 25px;
-   text-transform: lowercase;
+	max-width: 300px;
+	min-width: 200px;
+	background: $colorButton;
+	color: $colorFont;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	padding: 10px 20px;
+	border-radius: 10px / 25px;
+	text-transform: lowercase;
 
-   &::first-letter {
-      text-transform: uppercase;
-   }
+	&::first-letter {
+		text-transform: uppercase;
+	}
 }
 
 .footer {
-   color: rgb(250, 141, 208);
+	color: rgb(250, 141, 208);
 }
 
 .workout__menu-container {}
 
 .menu {
-   display: inline-flex;
-   flex-direction: column;
+	display: inline-flex;
+	flex-direction: column;
 
-   &__button {
-      position: relative;
-      background: $colorButtonTwo;
-      color: $colorFont;
+	&__button {
+		position: relative;
+		background: $colorButtonTwo;
+		color: $colorFont;
 
-      span:last-child {
-         display: none;
-      }
-   }
+		span:last-child {
+			display: none;
+		}
+	}
 
-   &__list {
-      flex-direction: column;
-      align-items: center;
-      row-gap: 5px;
-      padding-top: 25px;
-      padding-bottom: 15px;
-      border-radius: 0 0 10px 10px;
-      background-color: violet;
-      margin-top: -15px;
-   }
+	&__list {
+		flex-direction: column;
+		align-items: center;
+		row-gap: 5px;
+		padding-top: 25px;
+		padding-bottom: 15px;
+		border-radius: 0 0 10px 10px;
+		background-color: violet;
+		margin-top: -15px;
+	}
 
-   &__link {
-      color: $colorLink;
-      line-height: 1.3;
+	&__link {
+		color: $colorLink;
+		line-height: 1.3;
 
-      &:hover {
-         text-decoration: underline;
-      }
-   }
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
 
 .menu.active .menu__button span:first-child {
-   display: none;
+	display: none;
 }
 
 .menu.active .menu__button span:last-child {
-   display: block;
+	display: block;
 }
 
 .menu.active .menu__list {
-   display: flex;
+	display: flex;
 }
 
 .workout {
-   &__poligon {
-      display: flex;
-      flex-wrap: wrap;
-      //flex-direction: column;
-      gap: 10px;
-   }
+	&__poligon {
+		display: flex;
+		flex-wrap: wrap;
+		//flex-direction: column;
+		gap: 10px;
+	}
 }
 
 .poligon {
 
-   &__for-mouse,
-   &__for-mouse-over,
-   &__for-mouse-enter,
-   &__for-mouse-numbers {
-      width: 250px;
-      height: 250px;
-      background-color: $colorBackground;
-      border-radius: 10px;
-      padding: 10px;
-      line-height: 1.2;
-      font-size: 14px;
-      text-align: center;
-      color: $colorButtonTwo;
-      font-weight: 700;
-   }
+	&__for-mouse,
+	&__for-mouse-over,
+	&__for-mouse-enter,
+	&__for-mouse-numbers {
+		width: 250px;
+		height: 250px;
+		background-color: $colorBackground;
+		border-radius: 10px;
+		padding: 10px;
+		line-height: 1.2;
+		font-size: 14px;
+		text-align: center;
+		color: $colorButtonTwo;
+		font-weight: 700;
+	}
 
-   &__for-mouse-numbers--grid {
-      display: grid;
-      grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+	&__for-mouse-numbers--grid {
+		display: grid;
+		grid-template: repeat(3, 1fr) / repeat(3, 1fr);
 
-      span {
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         color: $colorFont;
-      }
+		span {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: $colorFont;
+		}
 
-      .decor {
-         background-color: rgba(255, 0, 85, 0.623);
-         color: #fff;
-      }
-   }
+		.decor {
+			background-color: rgba(255, 0, 85, 0.623);
+			color: #fff;
+		}
+	}
 }
 
 .textarea {
-   display: grid;
-   gap: 10px;
-   max-width: 300px;
+	display: grid;
+	gap: 10px;
+	max-width: 300px;
 
-   &__item {
-      padding: 5px;
-      min-height: 150px;
-      border-radius: 5px;
-      background-color: #222;
-      color: #fff;
-      letter-spacing: 1px;
-   }
+	&__item {
+		padding: 5px;
+		min-height: 150px;
+		border-radius: 5px;
+		background-color: #222;
+		color: #fff;
+		letter-spacing: 1px;
+	}
 }
 
 ._icon-hipster::before,
 ._icon-hipster2::before {
-   margin-right: 8px;
-   font-size: 32px;
-   transition: all 0.3s ease;
-   color: rgb(143, 183, 235);
+	margin-right: 8px;
+	font-size: 32px;
+	transition: all 0.3s ease;
+	color: rgb(143, 183, 235);
 }
 
 .home-work {
-   padding-top: 60px;
-   padding-bottom: 40px;
+	padding-top: 60px;
+	padding-bottom: 40px;
 
-   &__wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
 
-      &.active .home-work__button {
-         span:last-child {
-            display: block;
-         }
+		&.active .home-work__button {
+			span:last-child {
+				display: block;
+			}
 
-         span:first-child {
-            display: none;
-         }
-      }
-   }
+			span:first-child {
+				display: none;
+			}
+		}
+	}
 
-   &__button {
-      span:last-child {
-         display: none;
-      }
-   }
+	&__button {
+		span:last-child {
+			display: none;
+		}
+	}
 
-   &__form {
-      //width: 200px;
-   }
+	&__form {}
 
-   .active &__form {
-      display: block;
-   }
+	.active &__form {
+		display: block;
+	}
 
-   .active ._icon-search::before {
-      color: rgb(248, 110, 110);
-   }
+	.active ._icon-search::before {
+		color: rgb(248, 110, 110);
+	}
 
-   &__input-box-name {
-      display: flex;
-      gap: 10px;
-   }
+	&__input-box-name {
+		display: flex;
+		gap: 10px;
+	}
+
+	&__input-line {
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+		width: 100%;
+		border-radius: 10px;
+		overflow: hidden;
+		//outline: 1px solid $colorButton;
+		background: #fff;
+	}
+
+	&__button-find {
+		background: rgb(86, 86, 247);
+		transition: all 0.3s ease-in-out;
+		& span {
+			text-transform: lowercase;
+		}
+		&::first-letter {
+			text-transform: uppercase;
+		}
+		&:hover {
+			background-color: rgba(86, 86, 247, 0.9);
+			color: rgb(15, 15, 15);
+		}
+
+		&:focus {
+			outline: none;
+		}
+
+		&:active {
+			background-color: $colorBackground;
+			color: blue;
+		}
+	}
+
+	.home-work__input-name {
+		height: 100%;
+		padding: 8px;
+		color: rgb(86, 86, 247);
+		&:focus {
+			outline: none;
+		}
+	}
+
+	.input-count {
+		font-size: 14px;
+		color: $colorBackground;
+		align-self: center;
+	}
 }
-
-.input {
-   width: 100%;
-   border-radius: 10px;
-   padding: 8px;
-   outline: 1px solid $colorButton;
-}
-
-.input-count {
-   font-size: 14px;
-   color: $colorBackground;
-   align-self: center;
-}
-
-.button {}
-

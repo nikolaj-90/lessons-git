@@ -383,15 +383,46 @@ body {
   display: flex;
   gap: 10px;
 }
-
-.input {
+.home-work__input-line {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
   width: 100%;
   border-radius: 10px;
-  padding: 8px;
-  outline: 1px solid rgb(171, 250, 96);
+  overflow: hidden;
+  background: #fff;
 }
-
-.input-count {
+.home-work__button-find {
+  background: rgb(86, 86, 247);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.home-work__button-find span {
+  text-transform: lowercase;
+}
+.home-work__button-find::first-letter {
+  text-transform: uppercase;
+}
+.home-work__button-find:hover {
+  background-color: rgba(86, 86, 247, 0.9);
+  color: rgb(15, 15, 15);
+}
+.home-work__button-find:focus {
+  outline: none;
+}
+.home-work__button-find:active {
+  background-color: rgb(39, 238, 66);
+  color: blue;
+}
+.home-work .home-work__input-name {
+  height: 100%;
+  padding: 8px;
+  color: rgb(86, 86, 247);
+}
+.home-work .home-work__input-name:focus {
+  outline: none;
+}
+.home-work .input-count {
   font-size: 14px;
   color: rgb(39, 238, 66);
   -ms-flex-item-align: center;

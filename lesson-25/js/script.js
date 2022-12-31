@@ -226,6 +226,7 @@ function beforeunload (event) {
    event.returnValue = ``;
 };*/
 
+// * ================================================= Домашка
 // Escape
 
 const formButton = document.querySelector('.home-work__wrapper');
@@ -244,7 +245,7 @@ function openForm(event) {
    };
 };
 
-const inputItem = document.querySelector('.input');
+const inputItem = document.querySelector('.home-work__input-name');
 const inputCount = document.querySelector('.input-count span');
 const inputLimit = inputItem.getAttribute('maxlength');
 inputCount.innerHTML = inputLimit;
