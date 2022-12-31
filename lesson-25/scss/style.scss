@@ -83,8 +83,6 @@ $colorBackground: rgb(39, 238, 66);
 	color: rgb(250, 141, 208);
 }
 
-.workout__menu-container {}
-
 .menu {
 	display: inline-flex;
 	flex-direction: column;
@@ -227,8 +225,6 @@ $colorBackground: rgb(39, 238, 66);
 		}
 	}
 
-	&__form {}
-
 	.active &__form {
 		display: block;
 	}
@@ -255,12 +251,15 @@ $colorBackground: rgb(39, 238, 66);
 	&__button-find {
 		background: rgb(86, 86, 247);
 		transition: all 0.3s ease-in-out;
+
 		& span {
 			text-transform: lowercase;
 		}
+
 		&::first-letter {
 			text-transform: uppercase;
 		}
+
 		&:hover {
 			background-color: rgba(86, 86, 247, 0.9);
 			color: rgb(15, 15, 15);
@@ -280,6 +279,7 @@ $colorBackground: rgb(39, 238, 66);
 		height: 100%;
 		padding: 8px;
 		color: rgb(86, 86, 247);
+
 		&:focus {
 			outline: none;
 		}
