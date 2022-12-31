@@ -343,6 +343,7 @@ body {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: rgb(143, 183, 235);
+  outline: none;
 }
 
 .home-work {
@@ -368,6 +369,10 @@ body {
 .home-work__wrapper.active .home-work__button span:first-child {
   display: none;
 }
+.home-work__button:focus {
+  border-radius: 10%;
+  outline: 3px solid rgba(86, 86, 247, 0.5);
+}
 .home-work__button span:last-child {
   display: none;
 }
@@ -377,12 +382,6 @@ body {
 .home-work .active ._icon-search::before {
   color: rgb(248, 110, 110);
 }
-.home-work__input-box-name {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 10px;
-}
 .home-work__input-line {
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -390,6 +389,9 @@ body {
   border-radius: 10px;
   overflow: hidden;
   background: #fff;
+}
+.home-work__input-line:not(:last-child) {
+  margin-bottom: 5px;
 }
 .home-work__button-find {
   background: rgb(86, 86, 247);
@@ -423,7 +425,7 @@ body {
   outline: none;
 }
 .home-work .input-count {
-  font-size: 14px;
+  font-size: 12px;
   color: rgb(39, 238, 66);
   -ms-flex-item-align: center;
       align-self: center;

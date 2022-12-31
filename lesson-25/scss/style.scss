@@ -196,6 +196,7 @@ $colorBackground: rgb(39, 238, 66);
 	font-size: 32px;
 	transition: all 0.3s ease;
 	color: rgb(143, 183, 235);
+	outline: none;
 }
 
 .home-work {
@@ -220,6 +221,11 @@ $colorBackground: rgb(39, 238, 66);
 	}
 
 	&__button {
+		&:focus {
+			border-radius: 10%;
+			outline: 3px solid rgba(86, 86, 247, 0.5);
+		}
+
 		span:last-child {
 			display: none;
 		}
@@ -233,10 +239,7 @@ $colorBackground: rgb(39, 238, 66);
 		color: rgb(248, 110, 110);
 	}
 
-	&__input-box-name {
-		display: flex;
-		gap: 10px;
-	}
+	&__input-box-name {}
 
 	&__input-line {
 		display: grid;
@@ -246,6 +249,10 @@ $colorBackground: rgb(39, 238, 66);
 		overflow: hidden;
 		//outline: 1px solid $colorButton;
 		background: #fff;
+
+		&:not(:last-child) {
+			margin-bottom: 5px;
+		}
 	}
 
 	&__button-find {
@@ -286,7 +293,7 @@ $colorBackground: rgb(39, 238, 66);
 	}
 
 	.input-count {
-		font-size: 14px;
+		font-size: 12px;
 		color: $colorBackground;
 		align-self: center;
 	}
